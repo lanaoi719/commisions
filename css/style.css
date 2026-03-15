@@ -144,6 +144,12 @@ section {
   transform: scale(1.06);
 }
 
+.nav-pills a.active {
+  background-color: #fff;
+  font-weight: 700;
+  box-shadow: 0 0 0.5rem rgba(158, 226, 255, 0.5);
+}
+
 .nav-pills a svg {
   width: 1em;
   height: 1em;
