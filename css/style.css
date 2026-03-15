@@ -725,55 +725,106 @@ section {
   }
 
   .home-card {
-    grid-template-columns: 1fr;
-    border-radius: 2rem;
-    padding: 2rem;
-    gap: 2rem;
-  }
+  grid-template-columns: 1fr;
+  border-radius: 2rem;
+  padding: 2rem;
+  gap: 2rem;
+  text-align: center;
+}
 
-  .achievement-grid {
-    grid-template-columns: 1fr;
-  }
+.home-card > div {
+  text-align: center;
+}
 
-  .sns-grid {
-    grid-template-columns: 1fr;
-  }
+.home-card .section-title,
+.home-card .description {
+  text-align: center;
+}
 
-  .showcase-grid {
-    grid-template-columns: 1fr;
-  }
+.home-card .feature-list {
+  display: inline-block;
+  text-align: left;
+}
 
-  .price-layout {
-    grid-template-columns: 1fr;
-  }
+.home-card .btn-pill {
+  display: inline-flex;
+}
 
-  .addon-detail {
-    grid-template-columns: 1fr;
-  }
+.achievement-grid {
+  grid-template-columns: 1fr;
+}
 
-  .addon-detail-3col {
-    grid-template-columns: 1fr;
-  }
+.achievement-grid .achievement-img,
+.achievement-grid .achievement-img-tall {
+  max-height: 20rem;
+}
 
-  .nav-pills {
-    gap: 0.5rem;
-  }
+.sns-grid {
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
 
-  .nav-pills a {
-    font-size: 0.9em;
-    padding: 0.35rem 0.75rem;
-  }
+.showcase-grid {
+  grid-template-columns: 1fr;
+}
 
-  .about-avatar {
-    width: 12rem;
-  }
+.price-layout {
+  grid-template-columns: 1fr;
+}
 
-  .profile-avatar {
-    width: 80%;
-  }
+.addon-detail {
+  grid-template-columns: 1fr;
+}
+
+.addon-detail-3col {
+  grid-template-columns: 1fr;
+}
+
+.nav-pills {
+  gap: 0.5rem;
+}
+
+.nav-pills a {
+  font-size: 0.9em;
+  padding: 0.35rem 0.75rem;
+}
+
+.about-avatar {
+  width: 12rem;
+}
+
+.profile-avatar {
+  width: 60%;
+  max-width: 14rem;
+  margin: 0 auto;
+}
+
+.addon-gif img {
+  height: auto;
+}
 }
 
 @media (max-width: 480px) {
+  .site-wrapper {
+    padding: 1.5rem 1rem;
+  }
+
+  .site-header {
+    margin: -1.5rem -1rem 1.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .site-header h1 {
+    font-size: 1.75em;
+  }
+
+  .home-card {
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    gap: 1.5rem;
+  }
+
   .nav-pills {
     flex-direction: column;
     align-items: center;
@@ -783,5 +834,34 @@ section {
     width: 100%;
     max-width: 16rem;
     justify-content: center;
+  }
+
+  .profile-avatar {
+    width: 50%;
+    max-width: 10rem;
+  }
+
+  .addons-table {
+    font-size: 0.9em;
+  }
+
+  .addons-table th,
+  .addons-table td {
+    padding: 0.2rem 0.3rem;
+    font-size: 0.95em;
+  }
+
+  .price-table th,
+  .price-table td {
+    padding: 0.2rem 0.3rem;
+    font-size: 0.9em;
+  }
+
+  .gallery-preview {
+    border-radius: 1.5rem;
+  }
+
+  .tos-list li {
+    padding-left: 1.5rem;
   }
 }
