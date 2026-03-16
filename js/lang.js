@@ -144,33 +144,30 @@
   };
 
   function setLang(lang) {
-    document.querySelectorAll("[data-i18n]").forEach(function (el) {
+    var els = document.querySelectorAll("[data-i18n]");
+    for (var i = 0; i < els.length; i++) {
+      var el = els[i];
       var key = el.getAttribute("data-i18n");
       if (T[key] && T[key][lang]) {
-        if (el.tagName === "INPUT" || el.tagName === "TEXTAREA") {
-          el.placeholder = T[key][lang];
-        } else {
-          el.innerHTML = T[key][lang];
-        }
+        el.innerHTML = T[key][lang];
       }
-    });
+    }
     document.documentElement.lang = lang;
     var btn = document.getElementById("langToggle");
-    if (btn) btn.textContent = lang === "en" ? "中文" : "EN";
+    if (btn) btn.textContent = lang === "en" ? "\u4e2d\u6587" : "EN";
     try { localStorage.setItem("lang", lang); } catch (e) {}
   }
 
   var saved = "en";
   try { saved = localStorage.getItem("lang") || "en"; } catch (e) {}
 
-  document.addEventListener("DOMContentLoaded", function () {
-    setLang(saved);
-    var btn = document.getElementById("langToggle");
-    if (btn) {
-      btn.addEventListener("click", function () {
-        var cur = document.documentElement.lang === "en" ? "zh" : "en";
-        setLang(cur);
-      });
-    }
-  });
+  // Run immediately — script is loaded after the button
+  var btn = document.getElementById("langToggle");
+  if (btn) {
+    btn.addEventListener("click", function () {
+      var cur = document.documentElement.lang === "en" ? "zh" : "en";
+      setLang(cur);
+    });
+  }
+  setLang(saved);
 })();
