@@ -21,40 +21,42 @@
 
   <div class="site-wrapper">
     <header class="site-header">
-      <h1><a href="index.html" style="text-decoration:none">Lanaoi's Live2D Commissions</a></h1>
-      <p class="subtitle">&middot;Live2D Model Rigging &amp; Animation&middot;</p>
+      <h1><a href="index.html" style="text-decoration:none"><span data-i18n="header.title">Lanaoi's Live2D Commissions</span></a></h1>
+      <p class="subtitle"><span data-i18n="header.subtitle">&middot;Live2D Model Rigging &amp; Animation&middot;</span></p>
       <nav class="nav-pills">
-        <a href="index.html"><svg><use href="#icon-menu"></use></svg> Home</a>
-        <a href="about.html"><svg><use href="#icon-user"></use></svg> About me</a>
-        <a href="price.html"><svg><use href="#icon-plus"></use></svg> Price</a>
-        <a href="addons.html"><svg><use href="#icon-plus"></use></svg> Add-ons</a>
-        <a href="tos.html" class="active"><svg><use href="#icon-search"></use></svg> TOS</a>
+        <a href="index.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.home">Home</span></a>
+        <a href="about.html"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
+        <a href="price.html"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.price">Price</span></a>
+        <a href="addons.html"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
+        <a href="tos.html" class="active"><svg><use href="#icon-search"></use></svg> <span data-i18n="nav.tos">TOS</span></a>
       </nav>
     </header>
 
     <section>
-      <h2 class="section-title-center">Terms of Service</h2>
+      <h2 class="section-title-center"><span data-i18n="tos.title">Terms of Service</span></h2>
       <ol class="tos-list">
-        <li>By commissioning me, you agree to these terms.</li>
-        <li>The models are suitable for commercial use.</li>
-        <li>Prices are in USD, and payments will be made via PayPal invoice.</li>
-        <li>If the slot is scheduled for 5 months later, a $200 reservation fee (deducted from the total fee) is required to secure it.</li>
-        <li>Once I'm ready to begin your commission, an upfront payment of 50% of the total fee will need to be made before I start.</li>
-        <li>I may choose to accept commissions that align with my preferred art style or design.</li>
-        <li>Please be specific with your requirements. Revisions may incur a minor fee.</li>
-        <li>The Live2D model file will be sent to you upon full payment via Google Drive or Email (or anything convenient for you).</li>
-        <li>If you need the PSD or rigging source file, please discuss it with me. There will be an extra fee for buying the source file.</li>
-        <li>Refunds will not be provided once the model is completed.</li>
-        <li>Partial refunds are allowed before the completion of the model. The refund amount will depend on the stage of progress. After the refund, your commission will be discontinued.</li>
-        <li>Please credit me (Twitter@Lanaoi719) when using my work on any social media platform. You may refer to me as your Live2D mama, papa or rigger.</li>
-        <li>Your model may be used as a sample and shared on my social media in the form of screenshots, JPEG/GIF images, or showcase videos. Please inform me if you wish to keep it confidential.</li>
-        <li>If you have any further questions, please contact me at <a href="mailto:Lanaoicomms@gmail.com">Lanaoicomms@gmail.com</a> with the subject line [COMMISSION INQUIRY].</li>
+        <li data-i18n="tos.1">By commissioning me, you agree to these terms.</li>
+        <li data-i18n="tos.2">The models are suitable for commercial use.</li>
+        <li data-i18n="tos.3">Prices are in USD, and payments will be made via PayPal invoice.</li>
+        <li data-i18n="tos.4">If the slot is scheduled for 5 months later, a $200 reservation fee (deducted from the total fee) is required to secure it.</li>
+        <li data-i18n="tos.5">Once I'm ready to begin your commission, an upfront payment of 50% of the total fee will need to be made before I start.</li>
+        <li data-i18n="tos.6">I may choose to accept commissions that align with my preferred art style or design.</li>
+        <li data-i18n="tos.7">Please be specific with your requirements. Revisions may incur a minor fee.</li>
+        <li data-i18n="tos.8">The Live2D model file will be sent to you upon full payment via Google Drive or Email (or anything convenient for you).</li>
+        <li data-i18n="tos.9">If you need the PSD or rigging source file, please discuss it with me. There will be an extra fee for buying the source file.</li>
+        <li data-i18n="tos.10">Refunds will not be provided once the model is completed.</li>
+        <li data-i18n="tos.11">Partial refunds are allowed before the completion of the model. The refund amount will depend on the stage of progress. After the refund, your commission will be discontinued.</li>
+        <li data-i18n="tos.12">Please credit me (Twitter@Lanaoi719) when using my work on any social media platform. You may refer to me as your Live2D mama, papa or rigger.</li>
+        <li data-i18n="tos.13">Your model may be used as a sample and shared on my social media in the form of screenshots, JPEG/GIF images, or showcase videos. Please inform me if you wish to keep it confidential.</li>
+        <li data-i18n="tos.14">If you have any further questions, please contact me at <a href="mailto:Lanaoicomms@gmail.com">Lanaoicomms@gmail.com</a> with the subject line [COMMISSION INQUIRY].</li>
       </ol>
     </section>
 
-    <footer class="site-footer"><p>&copy; 2024 Lanaoi. All rights reserved.</p></footer>
+    <footer class="site-footer"><p data-i18n="footer">&copy; 2024 Lanaoi. All rights reserved.</p></footer>
   </div>
+  <button class="lang-toggle" id="langToggle">??</button>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
   <script>var b=document.getElementById('backToTop');function c(){b.classList.toggle('visible',window.scrollY>300)}window.addEventListener('scroll',c);window.addEventListener('pageshow',c);c();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});</script>
+  <script src="js/lang.js"></script>
 </body>
 </html>

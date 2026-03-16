@@ -22,28 +22,28 @@
 
   <div class="site-wrapper">
     <header class="site-header">
-      <h1><a href="index.html" style="text-decoration:none">Lanaoi's Live2D Commissions</a></h1>
-      <p class="subtitle">&middot;Live2D Model Rigging &amp; Animation&middot;</p>
+      <h1><a href="index.html" style="text-decoration:none"><span data-i18n="header.title">Lanaoi's Live2D Commissions</span></a></h1>
+      <p class="subtitle"><span data-i18n="header.subtitle">&middot;Live2D Model Rigging &amp; Animation&middot;</span></p>
       <nav class="nav-pills">
-        <a href="index.html"><svg><use href="#icon-menu"></use></svg> Home</a>
-        <a href="about.html"><svg><use href="#icon-user"></use></svg> About me</a>
-        <a href="price.html" class="active"><svg><use href="#icon-plus"></use></svg> Price</a>
-        <a href="addons.html"><svg><use href="#icon-plus"></use></svg> Add-ons</a>
-        <a href="tos.html"><svg><use href="#icon-search"></use></svg> TOS</a>
+        <a href="index.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.home">Home</span></a>
+        <a href="about.html"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
+        <a href="price.html" class="active"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.price">Price</span></a>
+        <a href="addons.html"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
+        <a href="tos.html"><svg><use href="#icon-search"></use></svg> <span data-i18n="nav.tos">TOS</span></a>
       </nav>
     </header>
 
     <section>
-      <h2 class="section-title-center">Pricing</h2>
-      <p class="closed-banner">- COMMISSION CLOSED -</p>
+      <h2 class="section-title-center"><span data-i18n="price.title">Pricing</span></h2>
+      <p class="closed-banner"><span data-i18n="price.closed">- COMMISSION CLOSED -</span></p>
 
       <div class="price-layout">
         <div>
-          <h3 class="package-title">Individual Rigging Package</h3>
+          <h3 class="package-title"><span data-i18n="price.individual">Individual Rigging Package</span></h3>
           <ul class="bullet-list">
-            <li>This package is designed for individual clients with limited budgets and flexible timeframes.</li>
-            <li>The primary distinction from the professional version is that this package allows a limited number of revisions, and strict deadlines may not always be met.</li>
-            <li>The rigging quality is the same as the professional package.</li>
+            <li><span data-i18n="price.individual1">This package is designed for individual clients with limited budgets and flexible timeframes.</span></li>
+            <li><span data-i18n="price.individual2">The primary distinction from the professional version is that this package allows a limited number of revisions, and strict deadlines may not always be met.</span></li>
+            <li><span data-i18n="price.individual3">The rigging quality is the same as the professional package.</span></li>
           </ul>
           <table class="price-table">
             <thead><tr><th>Package</th><th>Price (USD)</th><th>Workload</th></tr></thead>
@@ -52,10 +52,10 @@
 
           <hr class="divider" />
 
-          <h3 class="package-title">Professional Rigging Package</h3>
+          <h3 class="package-title"><span data-i18n="price.pro">Professional Rigging Package</span></h3>
           <ul class="bullet-list">
-            <li>This package is intended for clients with high demands, such as VTuber agencies, companies, and any clients requiring contract signing.</li>
-            <li>This package offers extensive revision services within my capabilities. Deadlines will be strictly adhered to unless unforeseen circumstances arise.</li>
+            <li><span data-i18n="price.pro1">This package is intended for clients with high demands, such as VTuber agencies, companies, and any clients requiring contract signing.</span></li>
+            <li><span data-i18n="price.pro2">This package offers extensive revision services within my capabilities. Deadlines will be strictly adhered to unless unforeseen circumstances arise.</span></li>
           </ul>
           <table class="price-table">
             <thead><tr><th>Package</th><th>Price (USD)</th><th>Workload</th></tr></thead>
@@ -64,16 +64,16 @@
 
           <hr class="divider" />
 
-          <h3 class="package-title">Model Features</h3>
+          <h3 class="package-title"><span data-i18n="price.features">Model Features</span></h3>
           <ul class="check-list">
             <li>Head &amp; body XYZ angle movements</li>
-            <li>Smooth physics (including bouncy eyes, mouth and body physics)</li>
-            <li>Facial expression tracking (angry, happy and surprised eyes)</li>
-            <li>AEIOU mouth shapes and mouth X tracking</li>
-            <li>Three free toggle expressions</li>
-            <li>Breathing</li>
+            <li data-i18n="price.f2">Smooth physics (including bouncy eyes, mouth and body physics)</li>
+            <li data-i18n="price.f3">Facial expression tracking (angry, happy and surprised eyes)</li>
+            <li data-i18n="price.f4">AEIOU mouth shapes and mouth X tracking</li>
+            <li data-i18n="price.f5">Three free toggle expressions</li>
+            <li data-i18n="price.f6">Breathing</li>
           </ul>
-          <a class="btn-pill" href="addons.html"><svg><use href="#icon-arrow-right"></use></svg> Add-ons</a>
+          <a class="btn-pill" href="addons.html"><svg><use href="#icon-arrow-right"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
         </div>
 
         <div style="text-align:center">
@@ -88,9 +88,11 @@
       </div>
     </section>
 
-    <footer class="site-footer"><p>&copy; 2024 Lanaoi. All rights reserved.</p></footer>
+    <footer class="site-footer"><p data-i18n="footer">&copy; 2024 Lanaoi. All rights reserved.</p></footer>
   </div>
+  <button class="lang-toggle" id="langToggle">??</button>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
   <script>var b=document.getElementById('backToTop');function c(){b.classList.toggle('visible',window.scrollY>300)}window.addEventListener('scroll',c);window.addEventListener('pageshow',c);c();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});</script>
+  <script src="js/lang.js"></script>
 </body>
 </html>
