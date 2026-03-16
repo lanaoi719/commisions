@@ -391,19 +391,21 @@ section {
 
 .achievement-row {
   display: grid;
-  grid-template-columns: 40% 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   align-items: center;
 }
 
 .achievement-row .achievement-img {
   width: 100%;
+  height: 100%;
   border-radius: 0.25rem;
   object-fit: cover;
 }
 
 .achievement-row .achievement-video {
   width: 100%;
+  height: 100%;
   aspect-ratio: 16 / 9;
   border: none;
   border-radius: 0.25rem;
