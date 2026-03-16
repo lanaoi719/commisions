@@ -384,41 +384,34 @@ section {
   text-shadow: 0.088rem 0.088rem 0.125rem #d1e3ff;
 }
 
-/* Achievement grid */
-.achievement-grid {
-  display: grid;
-  grid-template-columns: 40% 60%;
-  gap: 2rem;
-  align-items: center;
+/* Achievement block: image+video on top, title below centered */
+.achievement-block {
   margin: 1.5rem 0;
 }
 
-.achievement-grid > div {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
+.achievement-row {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  gap: 2rem;
+  align-items: center;
 }
 
-.achievement-grid .achievement-img {
+.achievement-row .achievement-img {
   width: 100%;
   border-radius: 0.25rem;
   object-fit: cover;
 }
 
-.achievement-grid .achievement-img-tall {
-  width: 100%;
-  max-height: 45rem;
-  border-radius: 0.25rem;
-  object-fit: cover;
-  object-position: top;
-}
-
-.achievement-grid .achievement-video {
+.achievement-row .achievement-video {
   width: 100%;
   aspect-ratio: 16 / 9;
   border: none;
   border-radius: 0.25rem;
+}
+
+.achievement-caption {
+  text-align: center;
+  margin-top: 1.25rem;
 }
 
 .link-icon {
@@ -757,12 +750,11 @@ section {
   display: inline-flex;
 }
 
-.achievement-grid {
-  grid-template-columns: 1fr;
-}
+.achievement-row {
+    grid-template-columns: 1fr;
+  }
 
-.achievement-grid .achievement-img,
-.achievement-grid .achievement-img-tall {
+  .achievement-row .achievement-img {
   max-height: 20rem;
 }
 
