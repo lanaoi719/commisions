@@ -147,8 +147,12 @@ var TRANSLATIONS={
   }
 
   btn.onclick=function(){
-    apply(lang==="en"?"zh":"en");
+    var newLang=lang==="en"?"zh":"en";
+    apply(newLang);
   };
 
-  apply(lang);
+  if(lang!=="en") apply(lang);
+
+  // Debug: mark body so we know JS ran
+  document.body.setAttribute("data-lang-loaded","true");
 })();
