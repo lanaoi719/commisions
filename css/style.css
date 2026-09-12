@@ -465,40 +465,80 @@ section {
   background: #78b9db;
 }
 
-.achievement-block {
-  margin: 1.5rem 0;
+.achievements-section .about-section-title {
+  max-width: 54rem;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.achievement-caption {
-  text-align: center;
+.achievement-list {
+  max-width: 54rem;
+  margin: 0 auto;
 }
 
-.achievement-caption .section-title-center {
-  margin-bottom: 0;
-  font-size: 1.25em;
+.achievement-entry {
+  display: grid;
+  grid-template-columns: 6rem minmax(0, 1fr);
+  min-height: 6rem;
 }
 
-.link-icon {
+.achievement-year {
+  padding: 1.6rem 1.5rem 1.6rem 0;
+  color: rgba(0, 0, 0, 0.52);
+  font-family: 'Sen', sans-serif;
+  font-size: 0.9em;
+  font-weight: 700;
+  text-align: right;
+}
+
+.achievement-detail {
+  position: relative;
   display: flex;
+  min-width: 0;
   align-items: center;
-  justify-content: center;
-  width: 2.5em;
-  height: 2.5em;
+  padding: 1.35rem 0 1.35rem 2rem;
+  border-left: 1px solid rgba(75, 148, 189, 0.34);
+}
+
+.achievement-detail::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -0.38rem;
+  width: 0.68rem;
+  height: 0.68rem;
+  border: 0.18rem solid rgba(255, 255, 255, 0.92);
   border-radius: 50%;
-  border: 1px solid rgba(0, 0, 0, 0.18);
-  text-decoration: none;
-  transition: transform 0.25s ease;
-  margin: 0.75rem auto 0;
+  background: #5fa8d3;
+  box-shadow: 0 0 0 1px rgba(75, 148, 189, 0.24);
+  transform: translateY(-50%);
 }
 
-.link-icon:hover {
-  transform: scale(1.06);
+.achievement-link {
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
+  gap: 0.65rem;
+  color: rgba(0, 0, 0, 0.8);
+  font-family: 'Sen', sans-serif;
+  font-size: 1.15em;
+  line-height: 1.45;
+  text-decoration-color: rgba(75, 148, 189, 0.4);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.3rem;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
 }
 
-.link-icon svg {
-  width: 60%;
-  height: 60%;
-  fill: rgba(0, 0, 0, 0.78);
+.achievement-link:hover {
+  color: #2879a8;
+  text-decoration-color: currentColor;
+}
+
+.achievement-link svg {
+  width: 1rem;
+  height: 1rem;
+  flex: 0 0 1rem;
+  fill: currentColor;
 }
 
 /* SNS Grid */
