@@ -465,43 +465,12 @@ section {
   background: #78b9db;
 }
 
-/* Achievement block: image+video on top, title below centered */
 .achievement-block {
-  margin: 2rem 0 2.5rem;
-}
-
-.achievement-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1.5rem;
-  align-items: stretch;
-}
-
-.achievement-row .achievement-img {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.75rem 2rem rgba(75, 148, 189, 0.12);
-  object-fit: cover;
-}
-
-.achievement-row .achievement-img-top {
-  object-position: top;
-}
-
-.achievement-row .achievement-video {
-  width: 100%;
-  height: 100%;
-  aspect-ratio: 16 / 9;
-  border: none;
-  border-radius: 0.5rem;
-  box-shadow: 0 0.75rem 2rem rgba(75, 148, 189, 0.12);
+  margin: 1.5rem 0;
 }
 
 .achievement-caption {
   text-align: center;
-  margin-top: 1rem;
 }
 
 .achievement-caption .section-title-center {
@@ -1203,14 +1172,6 @@ section {
 
   .about-copy .section-title-center {
     text-align: center;
-  }
-
-  .achievement-row {
-    grid-template-columns: 1fr;
-  }
-
-  .achievement-row .achievement-img {
-    max-height: none;
   }
 
   .sns-grid {
