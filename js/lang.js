@@ -125,7 +125,7 @@ var TRANSLATIONS={
 "tos.12":{en:"Please credit me (Twitter@Lanaoi719) when using my work on any social media platform. You may refer to me as your Live2D mama, papa or rigger.",zh:"\u5728\u4efb\u4f55\u793e\u4ea4\u5a92\u4f53\u5e73\u53f0\u4f7f\u7528\u6211\u7684\u4f5c\u54c1\u65f6\uff0c\u8bf7\u6ce8\u660e\u6211\uff08Twitter@Lanaoi719\uff09\u3002\u60a8\u53ef\u4ee5\u79f0\u547c\u6211\u4e3a\u60a8\u7684Live2D\u5988\u5988\u3001\u7238\u7238\u6216\u7ed1\u5b9a\u5e08\u3002"},
 "tos.13":{en:"Your model may be used as a sample and shared on my social media in the form of screenshots, JPEG/GIF images, or showcase videos. Please inform me if you wish to keep it confidential.",zh:"\u60a8\u7684\u6a21\u578b\u53ef\u80fd\u4f1a\u4f5c\u4e3a\u6837\u54c1\u4ee5\u622a\u56fe\u3001JPEG/GIF\u56fe\u7247\u6216\u5c55\u793a\u89c6\u9891\u7684\u5f62\u5f0f\u5728\u6211\u7684\u793e\u4ea4\u5a92\u4f53\u4e0a\u5206\u4eab\u3002\u5982\u679c\u60a8\u5e0c\u671b\u4fdd\u5bc6\uff0c\u8bf7\u544a\u77e5\u6211\u3002"},
 "tos.14":{en:"If you have any further questions, please contact me at <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a> with the subject line [COMMISSION INQUIRY].",zh:"\u5982\u6709\u4efb\u4f55\u5176\u4ed6\u95ee\u9898\uff0c\u8bf7\u53d1\u9001\u90ae\u4ef6\u81f3 <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a>\uff0c\u4e3b\u9898\u4e3a [COMMISSION INQUIRY]\u3002"},
-"footer":{en:"\u00a9 2024 Lanaoi. All rights reserved.",zh:"\u00a9 2024 Lanaoi. \u4fdd\u7559\u6240\u6709\u6743\u5229\u3002"}
+"footer":{en:"\u00a9 2026 Lanaoi. All rights reserved.",zh:"\u00a9 2026 Lanaoi. \u4fdd\u7559\u6240\u6709\u6743\u5229\u3002"}
 };
 
 (function(){
