@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1365 768" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#f1eff8"/>
+      <stop offset="0.48" stop-color="#eaf5fb"/>
+      <stop offset="1" stop-color="#d7f6fd"/>
+    </linearGradient>
+  </defs>
+  <rect width="1365" height="768" fill="url(#sky)"/>
+  <g fill="#fff" fill-opacity="0.94">
+    <circle cx="180" cy="244" r="7"/>
+    <circle cx="847" cy="300" r="7"/>
+    <circle cx="462" cy="622" r="7"/>
+    <circle cx="1232" cy="680" r="7"/>
+    <g transform="translate(401 203) rotate(45)">
+      <circle cx="-9" cy="-9" r="9"/>
+      <circle cx="9" cy="-9" r="9"/>
+      <circle cx="-9" cy="9" r="9"/>
+      <circle cx="9" cy="9" r="9"/>
+    </g>
+    <g transform="translate(918 589) rotate(45)">
+      <circle cx="-9" cy="-9" r="9"/>
+      <circle cx="9" cy="-9" r="9"/>
+      <circle cx="-9" cy="9" r="9"/>
+      <circle cx="9" cy="9" r="9"/>
+    </g>
+    <circle cx="1133" cy="265" r="18"/>
+    <path fill-rule="evenodd" d="M173 441a26 26 0 1 0 24 37 23 23 0 1 1-24-37Z"/>
+  </g>
+</svg>

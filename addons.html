@@ -7,7 +7,7 @@
   <meta name="description" content="Live2D Rigging Add-ons" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?display=swap&family=Sen:wght@400;700&family=Bellota:wght@400&family=Inter:wght@300;400" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?display=swap&family=Sen:wght@400;700&family=Inter:wght@300;400" rel="stylesheet" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -21,36 +21,40 @@
 
   <div class="site-wrapper">
     <header class="site-header">
-      <h1><a href="index.html" style="text-decoration:none"><span data-i18n="header.title">Lanaoi's Live2D Commissions</span></a></h1>
-      <p class="subtitle"><span data-i18n="header.subtitle">&middot;Live2D Model Rigging &amp; Animation&middot;</span></p>
       <nav class="nav-pills">
         <a href="index.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.home">Home</span></a>
         <a href="about.html"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
         <a href="price.html"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.price">Price</span></a>
         <a href="addons.html" class="active"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
+        <a href="showcase.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.showcase">Showcase</span></a>
         <a href="tos.html"><svg><use href="#icon-search"></use></svg> <span data-i18n="nav.tos">TOS</span></a>
       </nav>
     </header>
 
-    <section>
-      <h2 class="section-title-center"><span data-i18n="addons.title">Rigging Add-ons</span></h2>
-      <table class="addons-table">
-        <thead><tr><th data-i18n="addons.th.title">Title</th><th data-i18n="addons.th.price">Price (USD)</th></tr></thead>
-        <tbody>
-          <tr><td data-i18n="addons.arkit">Vbridger/Vitamins ARkit</td><td>300</td></tr>
-          <tr><td data-i18n="addons.tongue">Tongue Out</td><td>80</td></tr>
-          <tr><td data-i18n="addons.cheek">Cheek Puff</td><td>30</td></tr>
-          <tr><td data-i18n="addons.lipbite">Lip bite toggle</td><td>30</td></tr>
-          <tr><td data-i18n="addons.toggle">Toggle Expressions</td><td>20+</td></tr>
-          <tr><td data-i18n="addons.extras">Extra Accessories &amp; Items</td><td>20+</td></tr>
-          <tr><td data-i18n="addons.animation">Animation</td><td>100+</td></tr>
-        </tbody>
-      </table>
+    <section class="addons-page">
+      <div class="addons-heading">
+        <span class="addons-heading-mark" aria-hidden="true"></span>
+        <h2 class="section-title-center"><span data-i18n="addons.title">Rigging Add-ons</span></h2>
+      </div>
+      <div class="addons-table-wrap">
+        <table class="addons-table">
+          <thead><tr><th data-i18n="addons.th.title">Title</th><th data-i18n="addons.th.price">Price (USD)</th></tr></thead>
+          <tbody>
+            <tr><td data-i18n="addons.arkit">Vbridger/Vitamins ARkit</td><td>300</td></tr>
+            <tr><td data-i18n="addons.tongue">Tongue Out</td><td>80</td></tr>
+            <tr><td data-i18n="addons.cheek">Cheek Puff</td><td>30</td></tr>
+            <tr><td data-i18n="addons.lipbite">Lip bite toggle</td><td>30</td></tr>
+            <tr><td data-i18n="addons.toggle">Toggle Expressions</td><td>20+</td></tr>
+            <tr><td data-i18n="addons.extras">Extra Accessories &amp; Items</td><td>20+</td></tr>
+            <tr><td data-i18n="addons.animation">Animation</td><td>100+</td></tr>
+          </tbody>
+        </table>
+      </div>
     </section>
 
     <hr class="divider" />
 
-    <section>
+    <section class="addons-details">
       <div class="addon-detail-3col">
         <div>
           <h3 class="subsection-title"><span data-i18n="addons.arkit.title">Vbridger/Vitamins ARkit</span></h3>
@@ -129,11 +133,11 @@
           <h3 class="subsection-title"><span data-i18n="addons.anim.title">Animation</span></h3>
           <ul class="check-list"><li data-i18n="addons.anim.1">Walking animation $300+</li><li data-i18n="addons.anim.2">Waving hand $100</li><li data-i18n="addons.anim.3">Lost tracking sleeping animation $40+</li><li data-i18n="addons.anim.4">Idle animations for accessories (e.g. magic items, falling stars, smoke) $50+</li><li data-i18n="addons.anim.5">Feel free to discuss any other ideas with me!</li></ul>
         </div>
-        <div><img src="images/image05.gif" alt="Art by Mandusaru" loading="lazy" style="border-radius:3rem;box-shadow:0 0 1rem #b7dcf7;max-height:50rem;object-fit:cover" /></div>
+        <div class="addon-feature-image"><img src="images/image05.gif" alt="Art by Mandusaru" loading="lazy" /></div>
       </div>
     </section>
 
-    <footer class="site-footer"><p data-i18n="footer">&copy; 2024 Lanaoi. All rights reserved.</p></footer>
+    <footer class="site-footer"><p data-i18n="footer">&copy; 2026 Lanaoi. All rights reserved.</p></footer>
   </div>
   <button class="lang-toggle" id="langToggle">中文</button>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>

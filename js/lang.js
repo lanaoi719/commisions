@@ -3,6 +3,7 @@ var TRANSLATIONS={
 "nav.about":{en:"About me",zh:"\u5173\u4e8e\u6211"},
 "nav.price":{en:"Price",zh:"\u4ef7\u683c"},
 "nav.addons":{en:"Add-ons",zh:"\u9644\u52a0\u670d\u52a1"},
+"nav.showcase":{en:"Showcase",zh:"\u4f5c\u54c1\u5c55\u793a"},
 "nav.tos":{en:"TOS",zh:"\u6761\u6b3e"},
 "header.title":{en:"Lanaoi's Live2D Commissions",zh:"Lanaoi\u7684Live2D\u59d4\u6258"},
 "header.subtitle":{en:"\u00b7Live2D Model Rigging & Animation\u00b7",zh:"\u00b7Live2D\u6a21\u578b\u7ed1\u5b9a\u4e0e\u52a8\u753b\u00b7"},

@@ -7,7 +7,7 @@
   <meta name="description" content="Live2D Rigging Commission Pricing" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?display=swap&family=Sen:wght@400;700&family=Bellota:wght@400&family=Inter:wght@300;400" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?display=swap&family=Sen:wght@400;700&family=Inter:wght@300;400" rel="stylesheet" />
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -22,23 +22,24 @@
 
   <div class="site-wrapper">
     <header class="site-header">
-      <h1><a href="index.html" style="text-decoration:none"><span data-i18n="header.title">Lanaoi's Live2D Commissions</span></a></h1>
-      <p class="subtitle"><span data-i18n="header.subtitle">&middot;Live2D Model Rigging &amp; Animation&middot;</span></p>
       <nav class="nav-pills">
         <a href="index.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.home">Home</span></a>
         <a href="about.html"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
         <a href="price.html" class="active"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.price">Price</span></a>
         <a href="addons.html"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
+        <a href="showcase.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.showcase">Showcase</span></a>
         <a href="tos.html"><svg><use href="#icon-search"></use></svg> <span data-i18n="nav.tos">TOS</span></a>
       </nav>
     </header>
 
-    <section>
-      <h2 class="section-title-center"><span data-i18n="price.title">Pricing</span></h2>
-      <p class="closed-banner"><span data-i18n="price.closed">- COMMISSION CLOSED -</span></p>
+    <section class="price-page">
+      <div class="price-heading">
+        <h2 class="section-title-center"><span data-i18n="price.title">Pricing</span></h2>
+        <p class="closed-banner"><span data-i18n="price.closed">- COMMISSION CLOSED -</span></p>
+      </div>
 
-      <div class="price-layout">
-        <div>
+      <div class="package-grid">
+        <article class="package-card">
           <h3 class="package-title"><span data-i18n="price.individual">Individual Rigging Package</span></h3>
           <ul class="bullet-list">
             <li><span data-i18n="price.individual1">This package is designed for individual clients with limited budgets and flexible timeframes.</span></li>
@@ -47,11 +48,11 @@
           </ul>
           <table class="price-table">
             <thead><tr><th data-i18n="price.th.package">Package</th><th data-i18n="price.th.price">Price (USD)</th><th data-i18n="price.th.workload">Workload</th></tr></thead>
-            <tbody><tr><td data-i18n="price.td.individual">Individual</td><td>2200+</td><td data-i18n="price.td.days">30~60+ days</td></tr></tbody>
+            <tbody><tr><td data-i18n="price.td.individual">Individual</td><td>3100</td><td data-i18n="price.td.days">30+ days</td></tr></tbody>
           </table>
+        </article>
 
-          <hr class="divider" />
-
+        <article class="package-card package-card-featured">
           <h3 class="package-title"><span data-i18n="price.pro">Professional Rigging Package</span></h3>
           <ul class="bullet-list">
             <li><span data-i18n="price.pro1">This package is intended for clients with high demands, such as VTuber agencies, companies, and any clients requiring contract signing.</span></li>
@@ -59,14 +60,16 @@
           </ul>
           <table class="price-table">
             <thead><tr><th data-i18n="price.th.package">Package</th><th data-i18n="price.th.price">Price (USD)</th><th data-i18n="price.th.workload">Workload</th></tr></thead>
-            <tbody><tr><td data-i18n="price.td.professional">Professional</td><td>3000</td><td data-i18n="price.td.days">30~60+ days</td></tr></tbody>
+            <tbody><tr><td data-i18n="price.td.professional">Professional</td><td>3800</td><td data-i18n="price.td.days">30+ days</td></tr></tbody>
           </table>
+        </article>
+      </div>
 
-          <hr class="divider" />
-
+      <div class="price-details">
+        <div class="features-panel">
           <h3 class="package-title"><span data-i18n="price.features">Model Features</span></h3>
           <ul class="check-list">
-            <li>Head &amp; body XYZ angle movements</li>
+            <li data-i18n="price.f1">Head &amp; body XYZ angle movements</li>
             <li data-i18n="price.f2">Smooth physics (including bouncy eyes, mouth and body physics)</li>
             <li data-i18n="price.f3">Facial expression tracking (angry, happy and surprised eyes)</li>
             <li data-i18n="price.f4">AEIOU mouth shapes and mouth X tracking</li>
@@ -76,19 +79,21 @@
           <a class="btn-pill" href="addons.html"><svg><use href="#icon-arrow-right"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
         </div>
 
-        <div style="text-align:center">
-          <div class="gallery-preview">
-            <img src="images/gallery12/46af52e5.gif" alt="@Babyxiao" loading="lazy" />
-          </div>
-          <p class="gallery-caption">@Babyxiao</p>
-          <div style="margin-top:1.5rem">
+        <div class="price-showcase">
+          <figure>
+            <div class="gallery-preview">
+              <img src="images/gallery12/46af52e5.gif" alt="Live2D rigging showcase for @Babyxiao" loading="lazy" />
+            </div>
+            <figcaption class="gallery-caption">@Babyxiao</figcaption>
+          </figure>
+          <div class="price-video">
             <iframe style="width:100%;aspect-ratio:16/9;border:none;border-radius:0.25rem" src="https://www.youtube-nocookie.com/embed/ubpQ_jQzK7U?rel=0&controls=1" allowfullscreen loading="lazy" title="Rigging Demo"></iframe>
           </div>
         </div>
       </div>
     </section>
 
-    <footer class="site-footer"><p data-i18n="footer">&copy; 2024 Lanaoi. All rights reserved.</p></footer>
+    <footer class="site-footer"><p data-i18n="footer">&copy; 2026 Lanaoi. All rights reserved.</p></footer>
   </div>
   <button class="lang-toggle" id="langToggle">中文</button>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
