@@ -130,6 +130,32 @@ var TRANSLATIONS={
 };
 
 (function(){
+  if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
+    var starOffset=0;
+    var starTarget=0;
+    var lastScrollY=window.scrollY;
+    var starFrame=0;
+
+    function animateStars(){
+      starOffset+=(starTarget-starOffset)*0.14;
+      starTarget*=0.84;
+      document.documentElement.style.setProperty("--star-offset",starOffset.toFixed(2)+"px");
+      if(Math.abs(starOffset)>0.05||Math.abs(starTarget)>0.05){
+        starFrame=requestAnimationFrame(animateStars);
+      }else{
+        document.documentElement.style.setProperty("--star-offset","0px");
+        starFrame=0;
+      }
+    }
+
+    window.addEventListener("scroll",function(){
+      var delta=window.scrollY-lastScrollY;
+      lastScrollY=window.scrollY;
+      starTarget=Math.max(-24,Math.min(24,starTarget-delta*0.12));
+      if(!starFrame)starFrame=requestAnimationFrame(animateStars);
+    },{passive:true});
+  }
+
   var btn=document.getElementById("langToggle");
   if(!btn)return;
 
