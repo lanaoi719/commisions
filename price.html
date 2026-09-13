@@ -24,16 +24,17 @@
     <header class="site-header">
       <nav class="nav-pills">
         <a href="index.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.home">Home</span></a>
-        <a href="about.html"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
+        <a href="tos.html"><svg><use href="#icon-search"></use></svg> <span data-i18n="nav.tos">TOS</span></a>
         <a href="price.html" class="active"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.price">Price</span></a>
         <a href="addons.html"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
         <a href="showcase.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.showcase">Showcase</span></a>
-        <a href="tos.html"><svg><use href="#icon-search"></use></svg> <span data-i18n="nav.tos">TOS</span></a>
+        <a href="about.html"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
       </nav>
     </header>
 
     <section class="price-page">
       <div class="price-heading">
+        <span class="price-heading-mark" aria-hidden="true"></span>
         <h2 class="section-title-center"><span data-i18n="price.title">Pricing</span></h2>
         <p class="closed-banner"><span data-i18n="price.closed">- COMMISSION CLOSED -</span></p>
       </div>
@@ -48,7 +49,7 @@
           </ul>
           <table class="price-table">
             <thead><tr><th data-i18n="price.th.package">Package</th><th data-i18n="price.th.price">Price (USD)</th><th data-i18n="price.th.workload">Workload</th></tr></thead>
-            <tbody><tr><td data-i18n="price.td.individual">Individual</td><td>3100</td><td data-i18n="price.td.days">30+ days</td></tr></tbody>
+            <tbody><tr><td data-i18n="price.td.individual">Individual</td><td>3000</td><td data-i18n="price.td.days">30+ days</td></tr></tbody>
           </table>
         </article>
 
@@ -69,14 +70,14 @@
         <div class="features-panel">
           <h3 class="package-title"><span data-i18n="price.features">Model Features</span></h3>
           <ul class="check-list">
-            <li data-i18n="price.f1">Head &amp; body XYZ angle movements</li>
-            <li data-i18n="price.f2">Smooth physics (including bouncy eyes, mouth and body physics)</li>
-            <li data-i18n="price.f3">Facial expression tracking (angry, happy and surprised eyes)</li>
-            <li data-i18n="price.f4">AEIOU mouth shapes and mouth X tracking</li>
-            <li data-i18n="price.f5">Three free toggle expressions</li>
-            <li data-i18n="price.f6">Breathing</li>
+            <li data-i18n="price.f1">Wide-Range Head &amp; Body XYZ Movement</li>
+            <li data-i18n="price.f2">Smooth Physics</li>
+            <li data-i18n="price.f3">Flexible Facial Expression Tracking</li>
+            <li data-i18n="price.f4">AEIOU Mouth Shapes &amp; Mouth X Tracking</li>
+            <li data-i18n="price.f5">3 Free Toggle Expressions</li>
+            <li data-i18n="price.f6">Natural Breathing</li>
           </ul>
-          <a class="btn-pill" href="addons.html"><svg><use href="#icon-arrow-right"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
+          <a class="btn-pill" href="addons.html"><span data-i18n="nav.addons">Add-ons</span><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
         </div>
 
         <div class="price-showcase">
@@ -86,7 +87,10 @@
             </div>
           </figure>
           <div class="price-video">
-            <iframe style="width:100%;aspect-ratio:16/9;border:none;border-radius:0.25rem" src="https://www.youtube-nocookie.com/embed/KsZM8WTd1sY?rel=0&controls=1" allowfullscreen loading="lazy" title="Rigging Demo"></iframe>
+            <video controls playsinline preload="metadata" aria-label="Veera model showcase">
+              <source src="videos/Veera_showcase.mp4" type="video/mp4" />
+            </video>
+            <a class="showcase-source" href="https://www.youtube.com/watch?v=KsZM8WTd1sY" target="_blank" rel="noopener noreferrer"><span data-i18n="showcase.original">View original video</span> <span aria-hidden="true">&nearr;</span></a>
           </div>
         </div>
       </div>

@@ -28,18 +28,18 @@
     <header class="site-header">
       <nav class="nav-pills">
         <a href="index.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.home">Home</span></a>
-        <a href="about.html" class="active"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
+        <a href="tos.html"><svg><use href="#icon-search"></use></svg> <span data-i18n="nav.tos">TOS</span></a>
         <a href="price.html"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.price">Price</span></a>
         <a href="addons.html"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
         <a href="showcase.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.showcase">Showcase</span></a>
-        <a href="tos.html"><svg><use href="#icon-search"></use></svg> <span data-i18n="nav.tos">TOS</span></a>
+        <a href="about.html" class="active"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
       </nav>
     </header>
 
     <!-- ABOUT CONTENT -->
     <section class="about-page">
       <div class="about-intro">
-        <img class="about-avatar" src="images/image13.jpg" alt="Art by @c0m3_as_y0u_ar3" />
+        <img class="about-avatar" src="images/image13.jpg" alt="Art by @c0m3_as_y0u_ar3" draggable="false" />
         <div class="about-copy">
           <span class="about-heading-mark" aria-hidden="true"></span>
           <h2 class="section-title-center"><span data-i18n="about.title">About</span></h2>
@@ -83,7 +83,7 @@
   </div>
   <button class="lang-toggle" id="langToggle">中文</button>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
-  <script>var b=document.getElementById('backToTop');function c(){b.classList.toggle('visible',window.scrollY>300)}window.addEventListener('scroll',c);window.addEventListener('pageshow',c);c();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});</script>
+  <script>var b=document.getElementById('backToTop');function c(){b.classList.toggle('visible',window.scrollY>300)}window.addEventListener('scroll',c);window.addEventListener('pageshow',c);c();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});document.addEventListener('contextmenu',function(e){if(e.target.closest('.about-avatar'))e.preventDefault()});document.addEventListener('dragstart',function(e){if(e.target.closest('.about-avatar'))e.preventDefault()});</script>
   <script src="js/lang.js?v=20260913-1"></script>
 </body>
 </html>

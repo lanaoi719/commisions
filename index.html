@@ -29,18 +29,18 @@
     <header class="site-header">
       <nav class="nav-pills">
         <a href="index.html" class="active"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.home">Home</span></a>
-        <a href="about.html"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
+        <a href="tos.html"><svg><use href="#icon-search"></use></svg> <span data-i18n="nav.tos">TOS</span></a>
         <a href="price.html"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.price">Price</span></a>
         <a href="addons.html"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
         <a href="showcase.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.showcase">Showcase</span></a>
-        <a href="tos.html"><svg><use href="#icon-search"></use></svg> <span data-i18n="nav.tos">TOS</span></a>
+        <a href="about.html"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
       </nav>
     </header>
 
     <section>
       <div class="home-card">
         <div class="profile-col">
-          <img class="profile-avatar" src="images/image06.jpg" alt="Art by @c0m3_as_y0u_ar3" />
+          <img class="profile-avatar" src="images/image06.jpg" alt="Art by @c0m3_as_y0u_ar3" draggable="false" />
           <div class="social-icons" style="margin-top:1rem">
             <a href="https://twitter.com/Lanaoi719" target="_blank" rel="noopener noreferrer" aria-label="X"><svg><use href="#icon-x"></use></svg></a>
             <a href="https://youtube.com/@Lanaoi719?si=DncUWFIbH9h5uzIj" target="_blank" rel="noopener noreferrer" aria-label="YouTube"><svg><use href="#icon-youtube"></use></svg></a>
@@ -51,25 +51,25 @@
         <div class="home-info-column">
           <div class="home-info-group">
             <h2 class="section-title" data-i18n="home.rigging">Live2D Model Rigging</h2>
-            <ul class="feature-list"><li data-i18n="home.package">Package Information</li><li data-i18n="home.baseprice">Base Price</li></ul>
-            <a class="btn-pill" href="price.html"><svg><use href="#icon-arrow-right"></use></svg> <span data-i18n="home.details">Details</span></a>
+            <p class="description" data-i18n="home.riggingdesc">Compare rigging packages, pricing, and turnaround times.</p>
+            <a class="btn-pill" href="price.html"><span data-i18n="home.viewpricing">View pricing</span><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
           </div>
           <div class="home-info-group">
             <h2 class="section-title" data-i18n="home.addons">Rigging Add-ons</h2>
-            <ul class="feature-list"><li data-i18n="home.arkit">Vbridger/Vitamins ARkit</li><li data-i18n="home.toggle">Toggle Expressions</li><li data-i18n="home.tongue">Tongue Out</li><li data-i18n="home.extra">Extra Accessories &amp; Items</li></ul>
-            <a class="btn-pill" href="addons.html"><svg><use href="#icon-arrow-right"></use></svg> <span data-i18n="home.details">Details</span></a>
+            <p class="description" data-i18n="home.addonsdesc">Enhance your model with optional tracking upgrades, expressions, movements, and accessories.</p>
+            <a class="btn-pill" href="addons.html"><span data-i18n="home.viewaddons">Browse add-ons</span><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
           </div>
         </div>
         <div class="home-info-column">
           <div class="home-info-group">
             <h2 class="section-title" data-i18n="home.tos">Terms of Service</h2>
-            <p class="description" data-i18n="home.tosread">Please read before commissioning.</p>
-            <a class="btn-pill" href="tos.html"><svg><use href="#icon-arrow-right"></use></svg> <span data-i18n="home.details">Details</span></a>
+            <p class="description" data-i18n="home.tosread">Review usage rights, revisions, and delivery terms before commissioning.</p>
+            <a class="btn-pill" href="tos.html"><span data-i18n="home.readtos">Read the terms</span><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
           </div>
           <div class="home-info-group">
-            <h2 class="section-title" data-i18n="home.closed">Commission closed indefinitely</h2>
-            <ul class="feature-list"><li data-i18n="home.contact">Please contact me at <a href="mailto:Lanaoicomms@gmail.com">Lanaoicomms@gmail.com</a> with the subject [COMMISSION INQUIRY] if you have any questions!</li></ul>
-            <a class="btn-pill" href="https://docs.google.com/document/d/1G4-PSo_Z0kgheVoslMBqGuM0feuA8CiakIXGIeb2uQw/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><svg><use href="#icon-arrow-right"></use></svg> <span data-i18n="home.apply">Apply Form &amp; Email</span></a>
+            <h2 class="section-title" data-i18n="home.status">Commission Status</h2>
+            <p class="home-status" data-i18n="home.closed">Closed until further notice</p>
+            <a class="btn-pill" href="https://docs.google.com/document/d/1G4-PSo_Z0kgheVoslMBqGuM0feuA8CiakIXGIeb2uQw/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span data-i18n="home.apply">Apply Form &amp; Email</span><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
           </div>
         </div>
       </div>
@@ -79,7 +79,7 @@
   </div>
   <button class="lang-toggle" id="langToggle">中文</button>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
-  <script>var b=document.getElementById('backToTop');function c(){b.classList.toggle('visible',window.scrollY>300)}window.addEventListener('scroll',c);window.addEventListener('pageshow',c);c();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});</script>
+  <script>var b=document.getElementById('backToTop');function c(){b.classList.toggle('visible',window.scrollY>300)}window.addEventListener('scroll',c);window.addEventListener('pageshow',c);c();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});document.addEventListener('contextmenu',function(e){if(e.target.closest('.profile-avatar'))e.preventDefault()});document.addEventListener('dragstart',function(e){if(e.target.closest('.profile-avatar'))e.preventDefault()});</script>
   <script src="js/lang.js"></script>
 </body>
 </html>
