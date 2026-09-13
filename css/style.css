@@ -99,15 +99,12 @@ section {
   position: relative;
   z-index: 3;
   width: 100vw;
-  background: rgba(250, 255, 255, 0.78);
-  backdrop-filter: blur(18px) saturate(125%);
-  -webkit-backdrop-filter: blur(18px) saturate(125%);
+  background: transparent;
   padding: 1.5rem 0 1rem;
   margin: -4rem calc(50% - 50vw) 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.78);
-  box-shadow: 0 0.45rem 1.5rem rgba(75, 148, 189, 0.07);
+  border-bottom: 1px solid rgba(75, 148, 189, 0.2);
 }
 
 /* ===== Back to Top ===== */
@@ -189,9 +186,9 @@ section {
   align-items: center;
   gap: 0.5rem;
   padding: 0.4rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.62);
   border-radius: 2.5rem;
   background: rgba(255, 255, 255, 0.32);
-  border: 1px solid rgba(255, 255, 255, 0.62);
   color: rgba(0, 0, 0, 0.78);
   text-decoration: none;
   font-size: 1em;
@@ -831,8 +828,9 @@ section {
 
 /* Gallery preview image */
 .gallery-preview {
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 8 / 13;
   border-radius: 0.5rem;
+  background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0.75rem 2rem rgba(75, 148, 189, 0.18);
   overflow: hidden;
 }
@@ -840,7 +838,7 @@ section {
 .gallery-preview img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 .gallery-caption {
@@ -913,6 +911,28 @@ section {
 .addons-table td {
   color: rgba(0, 0, 0, 0.68);
   border-top: 1px solid rgba(165, 208, 240, 0.37);
+  padding: 0;
+}
+
+.addons-table tbody a {
+  display: block;
+  padding: 0.75rem 0.5rem;
+  color: inherit;
+  text-decoration: none;
+}
+
+.addons-table tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+.addons-table tbody tr:hover,
+.addons-table tbody tr:has(a:focus-visible) {
+  background: rgba(158, 226, 255, 0.18);
+}
+
+.addons-table tbody a:focus-visible {
+  outline: 2px solid #4b94bd;
+  outline-offset: -2px;
 }
 
 .addons-table th:last-child,
@@ -925,29 +945,78 @@ section {
 }
 
 /* Addon detail sections */
+.addon-detail,
+.addon-detail-3col {
+  scroll-margin-top: 2rem;
+}
+
 .addon-detail {
   display: grid;
   grid-template-columns: minmax(16rem, 0.85fr) minmax(0, 1.15fr);
   gap: 3rem;
   align-items: center;
-  margin: 2.5rem 0;
+  margin: 2rem 0;
 }
 
 .addon-detail-3col {
   display: grid;
-  grid-template-columns: minmax(18rem, 1fr) minmax(0, 0.72fr) minmax(0, 0.72fr);
-  gap: 1.5rem;
+  grid-template-columns: minmax(19rem, 1.08fr) minmax(0, 0.7fr) minmax(0, 0.7fr);
+  gap: 1.75rem;
   align-items: center;
-  margin: 2.5rem 0;
+  margin: 2rem 0;
+}
+
+.compact-gifs {
+  column-gap: 1.25rem;
+}
+
+.compact-gifs .addon-gif:nth-child(2) {
+  justify-self: end;
+}
+
+.compact-gifs .addon-gif:nth-child(3) {
+  justify-self: start;
+}
+
+.addons-details .check-list {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.addons-details .check-list li {
+  line-height: 1.55;
 }
 
 .addons-details .check-list li::before {
   content: '';
-  top: 0.72em;
+  top: 0.58em;
   width: 0.4rem;
   height: 0.4rem;
   border-radius: 50%;
   background: #78b9db;
+}
+
+.addons-details .check-list li:has(.addon-price) {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: baseline;
+}
+
+.addons-details .check-list:has(.addon-price) li:not(:last-child) {
+  padding-bottom: 0.45rem;
+  border-bottom: 1px solid rgba(75, 148, 189, 0.16);
+}
+
+.addon-price {
+  min-width: 4.5rem;
+  color: #287da9;
+  font-family: 'Sen', sans-serif;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1.55;
+  text-align: right;
+  white-space: nowrap;
 }
 
 .addons-details .subsection-title {
@@ -969,16 +1038,25 @@ section {
 
 .addons-details > .divider {
   margin: 0;
-  border-top-color: rgba(0, 0, 0, 0.1);
+  border-top-color: rgba(75, 148, 189, 0.2);
+}
+
+.addons-page + .divider {
+  max-width: 72rem;
+  margin: 0 auto;
+  border-top-color: rgba(75, 148, 189, 0.2);
 }
 
 .addon-gif {
+  width: fit-content;
+  max-width: min(100%, 20.36rem);
+  justify-self: center;
   border-radius: 0.5rem;
-  background: rgba(255, 255, 255, 0.42);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 1rem 2.5rem rgba(75, 148, 189, 0.15), inset 0 1px 0 rgba(255, 255, 255, 0.78);
-  backdrop-filter: blur(12px) saturate(115%);
-  -webkit-backdrop-filter: blur(12px) saturate(115%);
+  border: 0;
+  background: transparent;
+  box-shadow:
+    0 0.35rem 0.9rem rgba(31, 56, 70, 0.2),
+    0 1.15rem 2.5rem rgba(75, 148, 189, 0.24);
   overflow: hidden;
   transition: transform 0.25s ease;
 }
@@ -988,9 +1066,12 @@ section {
 }
 
 .addon-gif img {
-  width: 100%;
-  height: 18rem;
-  object-fit: cover;
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  -webkit-touch-callout: none;
+  user-select: none;
 }
 
 .addon-gif .gallery-caption {
@@ -1006,15 +1087,18 @@ section {
 }
 
 .addon-feature-image {
+  width: fit-content;
+  max-width: 100%;
+  justify-self: center;
   border-radius: 0.5rem;
   box-shadow: 0 0.75rem 2rem rgba(75, 148, 189, 0.16);
   overflow: hidden;
 }
 
 .addon-feature-image img {
-  width: 100%;
-  max-height: 38rem;
-  object-fit: cover;
+  width: auto;
+  height: auto;
+  max-width: 100%;
 }
 
 /* ===== TOS Section ===== */
@@ -1251,6 +1335,11 @@ section {
   gap: 1.5rem;
 }
 
+.compact-gifs .addon-gif:nth-child(2),
+.compact-gifs .addon-gif:nth-child(3) {
+  justify-self: center;
+}
+
 .nav-pills {
   gap: 0.5rem;
 }
@@ -1270,10 +1359,6 @@ section {
   margin: 0 auto;
 }
 
-.addon-gif img {
-  height: auto;
-  max-height: 30rem;
-}
 }
 
 @media (max-width: 480px) {
@@ -1324,6 +1409,14 @@ section {
     font-size: 0.95em;
   }
 
+  .addons-table tbody td {
+    padding: 0;
+  }
+
+  .addons-table tbody a {
+    padding: 0.55rem 0.3rem;
+  }
+
   .price-table th,
   .price-table td {
     padding: 0.55rem 0.3rem;
@@ -1336,10 +1429,6 @@ section {
 
   .price-showcase {
     grid-template-columns: 1fr;
-  }
-
-  .gallery-preview {
-    aspect-ratio: 4 / 3;
   }
 
   .gallery-preview {

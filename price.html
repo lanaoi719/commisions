@@ -82,12 +82,11 @@
         <div class="price-showcase">
           <figure>
             <div class="gallery-preview">
-              <img src="images/gallery12/46af52e5.gif" alt="Live2D rigging showcase for @Babyxiao" loading="lazy" />
+              <img src="images/showcase2.gif" alt="Live2D rigging showcase" loading="lazy" draggable="false" />
             </div>
-            <figcaption class="gallery-caption">@Babyxiao</figcaption>
           </figure>
           <div class="price-video">
-            <iframe style="width:100%;aspect-ratio:16/9;border:none;border-radius:0.25rem" src="https://www.youtube-nocookie.com/embed/ubpQ_jQzK7U?rel=0&controls=1" allowfullscreen loading="lazy" title="Rigging Demo"></iframe>
+            <iframe style="width:100%;aspect-ratio:16/9;border:none;border-radius:0.25rem" src="https://www.youtube-nocookie.com/embed/KsZM8WTd1sY?rel=0&controls=1" allowfullscreen loading="lazy" title="Rigging Demo"></iframe>
           </div>
         </div>
       </div>
@@ -97,7 +96,7 @@
   </div>
   <button class="lang-toggle" id="langToggle">中文</button>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
-  <script>var b=document.getElementById('backToTop');function c(){b.classList.toggle('visible',window.scrollY>300)}window.addEventListener('scroll',c);window.addEventListener('pageshow',c);c();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});</script>
+  <script>var b=document.getElementById('backToTop');function c(){b.classList.toggle('visible',window.scrollY>300)}window.addEventListener('scroll',c);window.addEventListener('pageshow',c);c();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});document.addEventListener('contextmenu',function(e){if(e.target.closest('.gallery-preview'))e.preventDefault()});document.addEventListener('dragstart',function(e){if(e.target.closest('.gallery-preview'))e.preventDefault()});</script>
   <script src="js/lang.js"></script>
 </body>
 </html>

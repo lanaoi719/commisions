@@ -58,6 +58,7 @@ var TRANSLATIONS={
 "addons.toggle.title":{en:"Toggle Expressions",zh:"\u5207\u6362\u8868\u60c5"},
 "addons.items.title":{en:"Extra Arms & Items",zh:"\u989d\u5916\u624b\u81c2\u4e0e\u7269\u54c1"},
 "addons.movement.title":{en:"Movement Toggles",zh:"\u52a8\u4f5c\u5207\u6362"},
+"addons.chibi.title":{en:"Chibi Mode",zh:"Q\u7248\u6a21\u5f0f"},
 "addons.anim.title":{en:"Animation",zh:"\u52a8\u753b"},
 "addons.th.title":{en:"Title",zh:"\u9879\u76ee"},
 "addons.th.price":{en:"Price (USD)",zh:"\u4ef7\u683c\uff08\u7f8e\u5143\uff09"},
@@ -97,8 +98,8 @@ var TRANSLATIONS={
 "addons.items.9":{en:"Extra hairstyle $80+",zh:"\u989d\u5916\u53d1\u578b $80+"},
 "addons.movement.1":{en:"Large angle body lean forward $200+",zh:"\u5927\u89d2\u5ea6\u8eab\u4f53\u524d\u503e $200+"},
 "addons.movement.2":{en:"Leg spread pose change $50+",zh:"\u817f\u90e8\u5c55\u5f00\u59ff\u52bf\u53d8\u5316 $50+"},
-"addons.movement.3":{en:"Turn into Chibi $400+",zh:"\u53d8\u6210Q\u7248 $400+"},
 "addons.movement.4":{en:"Feel free to discuss any other ideas with me!",zh:"\u6b22\u8fce\u4e0e\u6211\u8ba8\u8bba\u4efb\u4f55\u5176\u4ed6\u60f3\u6cd5\uff01"},
+"addons.chibi.1":{en:"Turn into Chibi $400+",zh:"\u53d8\u6210Q\u7248 $400+"},
 "addons.anim.1":{en:"Walking animation $300+",zh:"\u8d70\u8def\u52a8\u753b $300+"},
 "addons.anim.2":{en:"Waving hand $100",zh:"\u6325\u624b $100"},
 "addons.anim.3":{en:"Lost tracking sleeping animation $40+",zh:"\u5931\u53bb\u8ffd\u8e2a\u7761\u7720\u52a8\u753b $40+"},
@@ -109,7 +110,7 @@ var TRANSLATIONS={
 "price.th.workload":{en:"Workload",zh:"\u5de5\u671f"},
 "price.td.individual":{en:"Individual",zh:"\u4e2a\u4eba"},
 "price.td.professional":{en:"Professional",zh:"\u4e13\u4e1a"},
-"price.td.days":{en:"30~60+ days",zh:"30~60+\u5929"},
+"price.td.days":{en:"30+ days",zh:"30+ \u5929"},
 "tos.title":{en:"Terms of Service",zh:"\u670d\u52a1\u6761\u6b3e"},
 "tos.1":{en:"By commissioning me, you agree to these terms.",zh:"\u59d4\u6258\u6211\u5373\u8868\u793a\u60a8\u540c\u610f\u8fd9\u4e9b\u6761\u6b3e\u3002"},
 "tos.2":{en:"The models are suitable for commercial use.",zh:"\u6a21\u578b\u9002\u5408\u5546\u4e1a\u4f7f\u7528\u3002"},
@@ -135,13 +136,29 @@ var TRANSLATIONS={
   var lang="en";
   try{lang=localStorage.getItem("siteLang")||"en"}catch(e){}
 
+  function renderAddonPrice(el,text){
+    var match=text.match(/^(.*?)(?:(\u6bcf\u4e2a)\s*)?(\$[\d,]+\+?)(?:\s+(each))?$/);
+    if(!match){el.textContent=text;return;}
+    var copy=document.createElement("span");
+    var price=document.createElement("span");
+    copy.className="addon-copy";
+    price.className="addon-price";
+    copy.textContent=match[1].trim();
+    price.textContent=(match[2]?match[2]+" ":"")+match[3]+(match[4]?" "+match[4]:"");
+    el.replaceChildren(copy,price);
+  }
+
   function apply(l){
     lang=l;
     var els=document.querySelectorAll("[data-i18n]");
     for(var i=0;i<els.length;i++){
       var k=els[i].getAttribute("data-i18n");
       if(TRANSLATIONS[k]&&TRANSLATIONS[k][l]){
-        els[i].innerHTML=TRANSLATIONS[k][l];
+        if(els[i].matches(".addons-details .check-list li")){
+          renderAddonPrice(els[i],TRANSLATIONS[k][l]);
+        }else{
+          els[i].innerHTML=TRANSLATIONS[k][l];
+        }
       }
     }
     btn.textContent=(l==="en")?"\u4e2d\u6587":"EN";
@@ -153,7 +170,7 @@ var TRANSLATIONS={
     apply(newLang);
   };
 
-  if(lang!=="en") apply(lang);
+  apply(lang);
 
   // Debug: mark body so we know JS ran
   document.body.setAttribute("data-lang-loaded","true");
