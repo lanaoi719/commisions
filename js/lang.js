@@ -139,12 +139,20 @@ var TRANSLATIONS={
 };
 
 (function(){
+  if(window.location.protocol==="file:"){
+    var localRoutes={home:true,tos:true,price:true,addons:true,showcase:true,about:true};
+    var localLinks=document.querySelectorAll("a[href]");
+    for(var linkIndex=0;linkIndex<localLinks.length;linkIndex++){
+      var localHref=localLinks[linkIndex].getAttribute("href");
+      if(localRoutes[localHref])localLinks[linkIndex].setAttribute("href",localHref+".html");
+    }
+  }
+
   if(!window.matchMedia("(prefers-reduced-motion: reduce)").matches){
     var starOffset=0;
     var starTarget=0;
     var lastScrollY=window.scrollY;
     var starFrame=0;
-
     function animateStars(){
       starOffset+=(starTarget-starOffset)*0.14;
       starTarget*=0.84;
