@@ -11,7 +11,7 @@
   <link rel="icon" type="image/png" href="images/favicon.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-<body>
+<body class="home-page">
   <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
     <symbol id="icon-x" viewBox="0 0 40 40"><path d="M36,36l-12.4-18.3,11.6-13.7h-4l-9.4,11-7.5-11H4.2l12,17.7-12.2,14.3h4l9.9-11.7,7.9,11.7h10.2ZM13,6.6l18.2,26.9h-4L9,6.6h4Z"/></symbol>
     <symbol id="icon-youtube" viewBox="0 0 40 40"><path d="M24.3,27v4.2c0,.9-.3,1.3-.8,1.3-.3,0-.6-.1-.9-.4v-6c.3-.3.6-.4.9-.4C24,25.6,24.3,26.1,24.3,27ZM31.1,27v.9h-1.8V27c0-.9.3-1.4.9-1.4C30.8,25.6,31.1,26.1,31.1,27ZM11.7,22.6h2.1v-1.9H7.6v1.9h2.1v11.4h2ZM17.5,34.1h1.8v-9.9h-1.8v7.6c-.4.6-.8.8-1.1.8-.2,0-.4-.1-.4-.4,0,0,0-.3,0-.7v-7.3h-1.8V32c0,.7.1,1.1.2,1.5.2.5.5.7,1.2.7.6,0,1.3-.4,2-1.2ZM26.1,31.1v-4c0-1-.1-1.6-.2-2-.2-.7-.7-1.1-1.4-1.1-.7,0-1.3.4-1.9,1.1v-4.4h-1.8v13.3h1.8v-1c.6.7,1.2,1.1,1.9,1.1.7,0,1.2-.4,1.4-1.1C26,32.7,26.1,32.1,26.1,31.1ZM32.9,30.9v-.3H31c0,.7,0,1.1,0,1.2-.1.5-.4.7-.8.7-.6,0-.9-.5-.9-1.4v-1.7h3.6v-2.1c0-1.1-.2-1.8-.5-2.3-.5-.7-1.2-1-2.1-1-.9,0-1.6.3-2.1,1-.4.5-.6,1.3-.6,2.3v3.5c0,1.1.2,1.8.6,2.3.5.7,1.2,1,2.2,1,1,0,1.7-.4,2.2-1.1.2-.4.4-.7.4-1.1C32.9,31.9,32.9,31.5,32.9,30.9ZM20.7,12.5V8.3c0-.9-.3-1.4-.9-1.4-.6,0-.9.5-.9,1.4v4.2c0,.9.3,1.4.9,1.4C20.4,14,20.7,13.5,20.7,12.5ZM35.1,27.6c0,3.1-.2,5.5-.5,7-.2.8-.6,1.5-1.2,2-.6.5-1.3.8-2,.9-2.5.3-6.2.4-11.1.4s-8.7-.1-11.1-.4c-.8-.1-1.5-.4-2.1-.9-.6-.5-1-1.2-1.2-2-.3-1.5-.5-3.8-.5-7,0-3.1.2-5.5.5-7,.2-.8.6-1.5,1.2-2,.6-.5,1.3-.9,2.1-.9,2.5-.3,6.2-.4,11.1-.4s8.7.1,11.1.4c.8.1,1.5.4,2.1.9.6.5,1,1.2,1.2,2C34.9,22.1,35.1,24.4,35.1,27.6ZM15.1,2h2l-2.4,8v5.4h-2V10c-.2-1-.6-2.4-1.2-4.3-.5-1.4-.9-2.6-1.3-3.8h2.1l1.4,5.3L15.1,2ZM22.5,8.7v3.5c0,1.1-.2,1.9-.6,2.4-.5.7-1.2,1-2.1,1-.9,0-1.6-.3-2.1-1-.4-.5-.6-1.3-.6-2.4V8.7c0-1.1.2-1.9.6-2.3.5-.7,1.2-1,2.1-1,.9,0,1.6.3,2.1,1C22.3,6.8,22.5,7.6,22.5,8.7ZM29.2,5.4v10h-1.8v-1.1c-.7.8-1.4,1.2-2.1,1.2-.6,0-1-.2-1.2-.7C24,14.5,24,14,24,13.4V5.4h1.8v7.4c0,.4,0,.7,0,.7,0,.3.2.4.4.4.4,0,.7-.3,1.1-.9V5.4Z"/></symbol>
@@ -48,28 +48,30 @@
             <a href="https://bsky.app/profile/lanaoi.bsky.social" target="_blank" rel="noopener noreferrer" aria-label="Bluesky"><svg><use href="#icon-bluesky"></use></svg></a>
           </div>
         </div>
-        <div class="home-info-column">
-          <div class="home-info-group">
-            <h2 class="section-title" data-i18n="home.rigging">Live2D Model Rigging</h2>
-            <p class="description" data-i18n="home.riggingdesc">Compare rigging packages, pricing, and turnaround times.</p>
-            <a class="btn-pill" href="price.html"><span data-i18n="home.viewpricing">View pricing</span><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+        <div class="home-info-panel">
+          <div class="home-info-column">
+            <div class="home-info-group">
+              <h2 class="section-title" data-i18n="home.rigging">Live2D Model Rigging</h2>
+              <p class="description" data-i18n="home.riggingdesc">Compare rigging packages, pricing, and turnaround times.</p>
+              <a class="btn-pill" href="price.html"><span data-i18n="home.viewpricing">View pricing</span></a>
+            </div>
+            <div class="home-info-group">
+              <h2 class="section-title" data-i18n="home.addons">Rigging Add-ons</h2>
+              <p class="description" data-i18n="home.addonsdesc">Enhance your model with optional tracking upgrades, expressions, movements, and accessories.</p>
+              <a class="btn-pill" href="addons.html"><span data-i18n="home.viewaddons">Browse add-ons</span></a>
+            </div>
           </div>
-          <div class="home-info-group">
-            <h2 class="section-title" data-i18n="home.addons">Rigging Add-ons</h2>
-            <p class="description" data-i18n="home.addonsdesc">Enhance your model with optional tracking upgrades, expressions, movements, and accessories.</p>
-            <a class="btn-pill" href="addons.html"><span data-i18n="home.viewaddons">Browse add-ons</span><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
-          </div>
-        </div>
-        <div class="home-info-column">
-          <div class="home-info-group">
-            <h2 class="section-title" data-i18n="home.tos">Terms of Service</h2>
-            <p class="description" data-i18n="home.tosread">Review usage rights, revisions, and delivery terms before commissioning.</p>
-            <a class="btn-pill" href="tos.html"><span data-i18n="home.readtos">Read the terms</span><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
-          </div>
-          <div class="home-info-group">
-            <h2 class="section-title" data-i18n="home.status">Commission Status</h2>
-            <p class="home-status" data-i18n="home.closed">Closed until further notice</p>
-            <a class="btn-pill" href="https://docs.google.com/document/d/1G4-PSo_Z0kgheVoslMBqGuM0feuA8CiakIXGIeb2uQw/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span data-i18n="home.apply">Apply Form &amp; Email</span><svg aria-hidden="true"><use href="#icon-arrow-right"></use></svg></a>
+          <div class="home-info-column">
+            <div class="home-info-group">
+              <h2 class="section-title" data-i18n="home.tos">Terms of Service</h2>
+              <p class="description" data-i18n="home.tosread">Review usage rights, revisions, and delivery terms before commissioning.</p>
+              <a class="btn-pill" href="tos.html"><span data-i18n="home.readtos">Read the terms</span></a>
+            </div>
+            <div class="home-info-group">
+              <h2 class="section-title" data-i18n="home.status">Commission Status</h2>
+              <p class="home-status" data-i18n="home.closed">Closed until further notice</p>
+              <a class="btn-pill" href="https://docs.google.com/document/d/1G4-PSo_Z0kgheVoslMBqGuM0feuA8CiakIXGIeb2uQw/edit?usp=drive_link" target="_blank" rel="noopener noreferrer"><span data-i18n="home.apply">Apply Form &amp; Email</span></a>
+            </div>
           </div>
         </div>
       </div>
