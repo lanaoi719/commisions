@@ -30,6 +30,7 @@ var TRANSLATIONS={
 "home.showcases":{en:"Showcases",zh:"\u4f5c\u54c1\u5c55\u793a"},
 "home.ytfooter":{en:"Find out more on my YouTube channel",zh:"\u5728\u6211\u7684YouTube\u9891\u9053\u4e86\u89e3\u66f4\u591a"},
 "showcase.original":{en:"View original video",zh:"\u67e5\u770b\u539f\u89c6\u9891"},
+"showcase.xclips":{en:"X Video Highlights",zh:"X \u89c6\u9891\u7cbe\u9009"},
 "showcase.more":{en:"See more on",zh:"\u67e5\u770b\u66f4\u591a\u8bf7\u89c1"},
 "about.title":{en:"About",zh:"\u5173\u4e8e"},
 "about.bio":{en:"Hi, I'm Lanaoi, a full-time Live2D rigger. I started on Live2D in 2020 and won the 'Future Award' in the Live2D Creative Awards 2023 contest. I'm glad you're interested in my work!",zh:"\u4f60\u597d\uff0c\u6211\u662fLanaoi\uff0c\u5168\u804cLive2D\u7ed1\u5b9a\u5e08\u3002\u6211\u4ece2020\u5e74\u5f00\u59cb\u5236\u4f5cLive2D\uff0c\u5e76\u57282023\u5e74Live2D\u521b\u610f\u5927\u8d5b\u4e2d\u83b7\u5f97\u4e86\u201c\u672a\u6765\u5956\u201d\u3002\u5f88\u9ad8\u5174\u4f60\u5bf9\u6211\u7684\u4f5c\u54c1\u611f\u5174\u8da3\uff01"},

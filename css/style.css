@@ -927,6 +927,65 @@ section {
   box-shadow: inset 0.25rem 0.25rem 0.55rem rgba(31, 56, 70, 0.16);
 }
 
+.x-showcase {
+  margin-top: 3.5rem;
+}
+
+.showcase-subheading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.75rem;
+}
+
+.showcase-subheading h3 {
+  margin: 0;
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 1.45em;
+  letter-spacing: 0;
+}
+
+.x-showcase-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  gap: 1.5rem;
+}
+
+.x-showcase-column {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.x-showcase-card {
+  display: flex;
+  min-width: 0;
+  min-height: 9rem;
+  justify-content: center;
+  padding: 0.75rem;
+  border-radius: 1.25rem;
+  background: var(--neu-glass);
+  box-shadow: -0.65rem -0.65rem 1.3rem var(--neu-light), 0.65rem 0.65rem 1.3rem var(--neu-shadow);
+  backdrop-filter: blur(14px) saturate(115%);
+  -webkit-backdrop-filter: blur(14px) saturate(115%);
+}
+
+.x-showcase-card .twitter-tweet,
+.x-showcase-card iframe {
+  width: 100% !important;
+  max-width: 550px !important;
+  margin: 0 !important;
+}
+
+.x-showcase-card > blockquote > a {
+  align-self: center;
+  color: #397fa7;
+  font-family: 'Sen', sans-serif;
+  font-size: 0.85em;
+}
+
 .showcase-source {
   display: flex;
   align-items: center;
@@ -1781,11 +1840,23 @@ section {
 .addons-page-body .addon-detail,
 .addons-page-body .addon-detail-3col,
 .showcase-page-body .showcase-item,
+.showcase-page-body .x-showcase-card,
 .about-page-body .about-intro,
 .about-page-body .achievement-list {
   background: var(--neu-glass);
   backdrop-filter: blur(14px) saturate(115%);
   -webkit-backdrop-filter: blur(14px) saturate(115%);
+}
+
+.price-page-body .gallery-preview {
+  box-sizing: border-box;
+  padding: 0.65rem;
+  background: var(--neu-surface-strong);
+  box-shadow: inset 0.45rem 0.45rem 0.9rem rgba(91, 139, 164, 0.2), inset -0.45rem -0.45rem 0.9rem rgba(255, 255, 255, 0.62);
+}
+
+.price-page-body .gallery-preview img {
+  border-radius: 0.55rem;
 }
 
 .tos-list a {
@@ -1946,6 +2017,10 @@ section {
   }
 
 .showcase-grid {
+  grid-template-columns: 1fr;
+}
+
+.x-showcase-grid {
   grid-template-columns: 1fr;
 }
 
