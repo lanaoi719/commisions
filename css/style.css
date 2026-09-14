@@ -1852,8 +1852,14 @@ section {
   }
 
   .lang-toggle {
-    bottom: 1.25rem;
-    left: 1.25rem;
+    position: static;
+    flex: 0 0 auto;
+    order: 2;
+    margin: 0.75rem auto 0;
+  }
+
+  .nav-pills .lang-toggle {
+    width: fit-content;
   }
 
   .home-card {

@@ -28,6 +28,7 @@
         <a href="addons.html" class="active"><svg><use href="#icon-plus"></use></svg> <span data-i18n="nav.addons">Add-ons</span></a>
         <a href="showcase.html"><svg><use href="#icon-menu"></use></svg> <span data-i18n="nav.showcase">Showcase</span></a>
         <a href="about.html"><svg><use href="#icon-user"></use></svg> <span data-i18n="nav.about">About me</span></a>
+        <button class="lang-toggle" id="langToggle">中文</button>
       </nav>
     </header>
 
@@ -155,7 +156,6 @@
 
     <footer class="site-footer"><p data-i18n="footer">&copy; 2026 Lanaoi. All rights reserved.</p></footer>
   </div>
-  <button class="lang-toggle" id="langToggle">中文</button>
   <button class="back-to-top" id="backToTop" aria-label="Back to top">&uarr;</button>
   <script>var b=document.getElementById('backToTop');function c(){b.classList.toggle('visible',window.scrollY>300)}window.addEventListener('scroll',c);window.addEventListener('pageshow',c);c();b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});document.addEventListener('contextmenu',function(e){if(e.target.closest('.addon-gif'))e.preventDefault()});document.addEventListener('dragstart',function(e){if(e.target.closest('.addon-gif'))e.preventDefault()});</script>
   <script src="js/lang.js"></script>
