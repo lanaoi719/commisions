@@ -227,35 +227,40 @@ section {
   transform: scale(1.1);
 }
 
-/* Language toggle */
+/* Language selector */
 .lang-toggle {
-  position: fixed;
-  bottom: 2rem;
-  left: 2rem;
   width: auto;
-  min-width: 3rem;
-  height: 3rem;
-  padding: 0 0.75rem;
-  border-radius: 1.5rem;
-  background: rgba(158, 226, 255, 0.4);
-  border: 1px solid rgba(0, 0, 0, 0.12);
-  color: rgba(0, 0, 0, 0.6);
+  min-width: 7.5rem;
+  padding: 0.4rem 2.75rem 0.4rem 1rem;
+  border-radius: 2.5rem;
+  background: rgba(255, 255, 255, 0.5);
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.62) 50%),
+    linear-gradient(135deg, rgba(0, 0, 0, 0.62) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.25rem) 50%,
+    calc(100% - 0.95rem) 50%;
+  background-repeat: no-repeat;
+  background-size: 0.35rem 0.35rem, 0.35rem 0.35rem;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  color: rgba(0, 0, 0, 0.78);
+  appearance: none;
+  -webkit-appearance: none;
   font-family: 'Sen', sans-serif;
-  font-size: 0.875rem;
+  font-size: 1em;
   font-weight: 700;
   cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 99;
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
-  transition: transform 0.25s ease, background-color 0.25s ease;
+  transition: background-color 0.25s ease, box-shadow 0.25s ease;
 }
 
 .lang-toggle:hover {
   background: #fff;
-  transform: scale(1.1);
+  box-shadow: 0 0.4rem 1rem rgba(75, 148, 189, 0.1);
+}
+
+.lang-toggle:focus-visible {
+  outline: 2px solid #287da9;
+  outline-offset: 2px;
 }
 
 /* ===== Navigation ===== */
@@ -297,6 +302,58 @@ section {
   width: 1em;
   height: 1em;
   fill: currentColor;
+}
+
+.nav-pills .lang-toggle {
+  min-width: 7.5rem;
+  padding-top: 0.4rem;
+  padding-bottom: 0.4rem;
+  border: 1px solid rgba(255, 255, 255, 0.62);
+  background-color: rgba(255, 255, 255, 0.32);
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.62) 50%),
+    linear-gradient(135deg, rgba(0, 0, 0, 0.62) 50%, transparent 50%);
+  color: rgba(0, 0, 0, 0.78);
+  font-family: inherit;
+  font-size: 1em;
+  font-weight: 400;
+  line-height: 1.6;
+  transition: transform 0.25s ease, background-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.nav-pills .lang-toggle:hover,
+.nav-pills .lang-toggle:focus {
+  background-color: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 0.4rem 1rem rgba(75, 148, 189, 0.1);
+  transform: scale(1.06);
+}
+
+.neu-page .nav-pills .lang-toggle,
+.home-page .nav-pills .lang-toggle,
+.price-page-body .nav-pills .lang-toggle {
+  border: 0;
+  background-color: rgba(241, 239, 248, 0.88);
+  background-image:
+    linear-gradient(45deg, transparent 50%, rgba(0, 0, 0, 0.62) 50%),
+    linear-gradient(135deg, rgba(0, 0, 0, 0.62) 50%, transparent 50%);
+  background-position:
+    calc(100% - 1.25rem) 50%,
+    calc(100% - 0.95rem) 50%;
+  background-repeat: no-repeat;
+  background-size: 0.35rem 0.35rem, 0.35rem 0.35rem;
+  box-shadow: -0.45rem -0.45rem 0.9rem var(--neu-light), 0.45rem 0.45rem 0.9rem var(--neu-shadow);
+}
+
+.neu-page .nav-pills .lang-toggle:hover,
+.neu-page .nav-pills .lang-toggle:focus,
+.home-page .nav-pills .lang-toggle:hover,
+.home-page .nav-pills .lang-toggle:focus,
+.price-page-body .nav-pills .lang-toggle:hover,
+.price-page-body .nav-pills .lang-toggle:focus {
+  color: #287da9;
+  background-color: #f1eff8;
+  box-shadow: -0.3rem -0.3rem 0.65rem var(--neu-light), 0.3rem 0.3rem 0.65rem var(--neu-shadow);
+  transform: translateY(-1px);
 }
 
 /* ===== Home Section — 3 Column Card ===== */
@@ -1974,17 +2031,6 @@ section {
     right: 1.25rem;
   }
 
-  .lang-toggle {
-    position: static;
-    flex: 0 0 auto;
-    order: 2;
-    margin: 0.75rem auto 0;
-  }
-
-  .nav-pills .lang-toggle {
-    width: fit-content;
-  }
-
   .home-card {
     grid-template-columns: 1fr;
     border-radius: 2rem;
@@ -2158,6 +2204,11 @@ section {
     width: 100%;
     max-width: 16rem;
     justify-content: center;
+  }
+
+  .nav-pills .lang-toggle {
+    width: 100%;
+    max-width: 16rem;
   }
 
   .profile-avatar {

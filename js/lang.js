@@ -138,6 +138,150 @@ var TRANSLATIONS={
 "footer":{en:"\u00a9 2026 Lanaoi. All rights reserved.",zh:"\u00a9 2026 Lanaoi. \u4fdd\u7559\u6240\u6709\u6743\u5229\u3002"}
 };
 
+var JAPANESE_TRANSLATIONS={
+"nav.home":"ホーム",
+"nav.about":"プロフィール",
+"nav.price":"料金",
+"nav.addons":"追加オプション",
+"nav.showcase":"実績紹介",
+"nav.tos":"利用規約",
+"header.title":"LanaoiのLive2Dコミッション",
+"header.subtitle":"・Live2Dモデルのモデリング＆アニメーション・",
+"home.aboutme":"プロフィール",
+"home.rigging":"Live2Dモデルのモデリング",
+"home.package":"プラン情報",
+"home.baseprice":"基本料金",
+"home.riggingdesc":"モデリングプラン、料金、納期をご確認いただけます。",
+"home.details":"詳細",
+"home.viewpricing":"料金を見る",
+"home.viewaddons":"追加オプションを見る",
+"home.readtos":"利用規約を読む",
+"home.addons":"モデリング追加オプション",
+"home.addonsdesc":"トラッキング強化、表情、動き、アクセサリーなどを追加できます。",
+"home.arkit":"Vbridger/Vitamins ARkit",
+"home.toggle":"切り替え表情",
+"home.tongue":"舌出し",
+"home.extra":"追加アクセサリー＆アイテム",
+"home.tos":"利用規約",
+"home.tosread":"ご依頼前に、利用権、修正、納品に関する規約をご確認ください。",
+"home.status":"受付状況",
+"home.closed":"現在、受付を停止しています",
+"home.apply":"申込フォーム＆メール",
+"home.showcases":"制作実績",
+"home.ytfooter":"YouTubeチャンネルでさらに見る",
+"showcase.original":"元の動画を見る",
+"showcase.xclips":"X 動画ハイライト",
+"showcase.more":"もっと見る",
+"about.title":"プロフィール",
+"about.bio":"こんにちは、Lanaoiです。Live2Dモデラーとして専業で活動しています。2020年にLive2Dを始め、Live2D Creative Awards 2023で「Future Award」を受賞しました。私の作品に興味を持っていただき、ありがとうございます！",
+"about.achievements":"実績",
+"about.cursor2026":"Live2D公認ソフトウェア「Cursor for Live2D」制作者",
+"about.award2023":"Live2D Creative Awards「Future Award」受賞",
+"about.buzz2023":"Live2D Buzz Creator",
+"about.girls2022":"カスタマイズ可能なLive2Dモデル「Lanaoi Girls' College」",
+"about.sns":"SNS",
+"price.title":"料金",
+"price.closed":"- コミッション受付停止中 -",
+"price.individual":"個人向けモデリングプラン",
+"price.individual1":"このプランは、予算が限られており、スケジュールに余裕のある個人のお客様向けです。",
+"price.individual2":"プロ向けプランとの主な違いは、修正回数に制限があり、厳密な納期に対応できない場合がある点です。",
+"price.individual3":"モデリングの品質はプロ向けプランと同じです。",
+"price.pro":"プロ向けモデリングプラン",
+"price.pro1":"このプランは、VTuber事務所、企業、契約書の締結が必要なお客様など、高い要件をお持ちのお客様向けです。",
+"price.pro2":"対応可能な範囲で幅広い修正に対応します。不測の事態を除き、納期を厳守します。",
+"price.features":"モデル機能",
+"price.f1":"頭部＆身体の広範囲XYZ可動",
+"price.f2":"滑らかな物理演算",
+"price.f3":"柔軟な表情トラッキング",
+"price.f4":"AEIOU口形＆口角Xトラッキング",
+"price.f5":"切り替え表情3種無料",
+"price.f6":"自然な呼吸表現",
+"price.addons":"追加オプション",
+"addons.title":"モデリング追加オプション",
+"addons.arkit.title":"Vbridger/Vitamins ARkit",
+"addons.arkit.note":"※こちらをご依頼の場合、モデル使用中は常にVB/VTMへ接続することを推奨します。接続しないと表情が正しく動作しない場合があります。",
+"addons.tongue.title":"舌出し",
+"addons.cheek.title":"頬膨らませ",
+"addons.lipbite.title":"唇を噛む",
+"addons.toggle.title":"切り替え表情",
+"addons.items.title":"追加の腕＆アイテム",
+"addons.movement.title":"動作切り替え",
+"addons.chibi.title":"ちびキャラモード",
+"addons.anim.title":"アニメーション",
+"addons.th.title":"項目",
+"addons.th.price":"料金（USD）",
+"addons.arkit":"Vbridger/Vitamins ARkit",
+"addons.tongue":"舌出し",
+"addons.cheek":"頬膨らませ",
+"addons.lipbite":"唇噛み切り替え",
+"addons.toggle":"切り替え表情",
+"addons.extras":"追加アクセサリー＆アイテム",
+"addons.animation":"アニメーション",
+"addons.arkit.f1":"目を細める",
+"addons.arkit.f2":"顎の動き",
+"addons.arkit.f3":"口のX方向",
+"addons.arkit.f4":"口をすぼめる動き",
+"addons.arkit.f5":"口を漏斗状にする動き",
+"addons.arkit.f6":"唇を押し合わせる",
+"addons.arkit.f7":"にっこり笑う",
+"addons.arkit.f8":"口をすぼめる＆横に広げる",
+"addons.arkit.f9":"頬膨らませ",
+"addons.arkit.f10":"眉頭を上げる",
+"addons.tongue.1":"切り替え、またはフェイストラッキングのいずれかに対応します。",
+"addons.tongue.2":"切り替え式の場合、オンにすると口形が固定されます。",
+"addons.tongue.3":"フェイストラッキング式の場合、口形の変化も反映されます。",
+"addons.cheek.1":"切り替えとフェイストラッキングの両方に対応します。",
+"addons.cheek.2":"VB/VTMモデリングに含まれています。",
+"addons.lipbite.1":"切り替えのみ",
+"addons.toggle.1":"赤面／ハート目／浮かぶ星／涙など 各$20",
+"addons.toggle.2":"眉と口形の変更（八の字眉、怒り顔、漫画風の顔など）各$30+",
+"addons.toggle.3":"動く涙 $60",
+"addons.items.1":"追加の腕 $60+",
+"addons.items.2":"アイテムのフェードアウト切り替え $20",
+"addons.items.3":"動物の耳 $80",
+"addons.items.4":"尻尾 $40+",
+"addons.items.5":"翼 $60+",
+"addons.items.6":"眼鏡 $20",
+"addons.items.7":"角 $50+",
+"addons.items.8":"トラッキング対応ペット／マスコット $100+",
+"addons.items.9":"追加の髪型 $80+",
+"addons.movement.1":"身体を大きく前傾させる動き $200+",
+"addons.movement.2":"脚を広げるポーズ変更 $50+",
+"addons.movement.4":"その他のアイデアもお気軽にご相談ください！",
+"addons.chibi.1":"ちびキャラ化 $400+",
+"addons.anim.1":"歩行アニメーション $300+",
+"addons.anim.2":"手を振る動き $100",
+"addons.anim.3":"トラッキング喪失時の睡眠アニメーション $40+",
+"addons.anim.4":"アクセサリーの待機アニメーション（魔法アイテム、流れ星、煙など）$50+",
+"addons.anim.5":"その他のアイデアもお気軽にご相談ください！",
+"price.th.package":"プラン",
+"price.th.price":"料金（USD）",
+"price.th.workload":"制作期間",
+"price.td.individual":"個人向け",
+"price.td.professional":"プロ向け",
+"price.td.days":"30日以上",
+"tos.title":"利用規約",
+"tos.1":"ご依頼いただいた時点で、本規約に同意したものとみなします。",
+"tos.2":"モデルは商用利用が可能です。",
+"tos.3":"料金は米ドル建てで、PayPalの請求書を通じてお支払いいただきます。",
+"tos.4":"コミッション枠の確保には、合計料金から差し引かれる$200の予約金が必要です。予約金は返金できません。",
+"tos.5":"制作開始の準備が整いましたら、開始前に合計料金の50％を前払いしていただきます。",
+"tos.6":"ご依頼をお受けできるか判断するため、少なくともモデルのラフとご要望の一覧を事前に確認させていただきます。",
+"tos.7":"ご要望は具体的にお伝えください。制作開始後の追加依頼は、制作期間が延びる場合があります。スケジュール維持のため、追加料金または別日程での対応となる場合があります。",
+"tos.8":"Live2Dモデルファイルは、全額お支払い後にGoogle Drive、メール、またはご都合のよい方法で納品します。",
+"tos.9":"PSDまたはモデリングのソースファイルが必要な場合はご相談ください。ソースファイルの購入には追加料金がかかります。",
+"tos.10":"モデル完成後の返金はお受けできません。",
+"tos.11":"モデル完成前であれば、一部返金が可能です。返金額は制作の進行状況によって異なり、返金後は制作を終了します。",
+"tos.12":"作品をSNSで使用する際は、私（Twitter @Lanaoi719）のクレジットを表記してください。Live2D mama、papa、またはriggerとしてご紹介いただけます。",
+"tos.13":"モデルは実績サンプルとして、スクリーンショット、JPEG/GIF画像、紹介動画などの形で私のSNSに掲載する場合があります。非公開をご希望の場合はお知らせください。",
+"tos.14":"ご不明な点がございましたら、件名を[COMMISSION INQUIRY]として <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a> までご連絡ください。",
+"footer":"© 2026 Lanaoi. All rights reserved."
+};
+
+for(var translationKey in JAPANESE_TRANSLATIONS){
+  if(TRANSLATIONS[translationKey])TRANSLATIONS[translationKey].ja=JAPANESE_TRANSLATIONS[translationKey];
+}
+
 (function(){
   if(window.location.protocol==="file:"){
     var localRoutes={home:true,tos:true,price:true,addons:true,showcase:true,about:true};
@@ -173,14 +317,14 @@ var TRANSLATIONS={
     },{passive:true});
   }
 
-  var btn=document.getElementById("langToggle");
-  if(!btn)return;
+  var languageSelect=document.getElementById("langToggle");
+  if(!languageSelect)return;
 
   var lang="en";
   try{lang=localStorage.getItem("siteLang")||"en"}catch(e){}
 
   function renderAddonPrice(el,text){
-    var match=text.match(/^(.*?)(?:(\u6bcf\u4e2a)\s*)?(\$[\d,]+\+?)(?:\s+(each))?$/);
+    var match=text.match(/^(.*?)(?:((?:\u6bcf\u4e2a|各))\s*)?(\$[\d,]+\+?)(?:\s+(each))?$/);
     if(!match){el.textContent=text;return;}
     var copy=document.createElement("span");
     var price=document.createElement("span");
@@ -193,6 +337,7 @@ var TRANSLATIONS={
 
   function apply(l){
     lang=l;
+    document.documentElement.lang=l;
     var els=document.querySelectorAll("[data-i18n]");
     for(var i=0;i<els.length;i++){
       var k=els[i].getAttribute("data-i18n");
@@ -204,13 +349,12 @@ var TRANSLATIONS={
         }
       }
     }
-    btn.textContent=(l==="en")?"\u4e2d\u6587":"EN";
+    languageSelect.value=l;
     try{localStorage.setItem("siteLang",l)}catch(e){}
   }
 
-  btn.onclick=function(){
-    var newLang=lang==="en"?"zh":"en";
-    apply(newLang);
+  languageSelect.onchange=function(){
+    apply(languageSelect.value);
   };
 
   apply(lang);
