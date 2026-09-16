@@ -320,6 +320,33 @@ for(var translationKey in JAPANESE_TRANSLATIONS){
   var languageSelect=document.getElementById("langToggle");
   if(!languageSelect)return;
 
+  var languageDropdown=document.createElement("div");
+  var languageTrigger=document.createElement("button");
+  var languageMenu=document.createElement("div");
+  languageDropdown.className="language-dropdown";
+  languageTrigger.className="lang-toggle language-trigger";
+  languageTrigger.type="button";
+  languageTrigger.setAttribute("aria-haspopup","listbox");
+  languageTrigger.setAttribute("aria-expanded","false");
+  languageMenu.className="language-menu";
+  languageMenu.setAttribute("role","listbox");
+  languageMenu.setAttribute("aria-label",languageSelect.getAttribute("aria-label")||"Language");
+  languageSelect.parentNode.insertBefore(languageDropdown,languageSelect);
+  languageDropdown.appendChild(languageTrigger);
+  languageDropdown.appendChild(languageMenu);
+  languageDropdown.appendChild(languageSelect);
+  languageSelect.classList.add("language-native");
+
+  for(var optionIndex=0;optionIndex<languageSelect.options.length;optionIndex++){
+    var languageOption=document.createElement("button");
+    languageOption.type="button";
+    languageOption.className="language-option";
+    languageOption.setAttribute("role","option");
+    languageOption.setAttribute("data-value",languageSelect.options[optionIndex].value);
+    languageOption.textContent=languageSelect.options[optionIndex].textContent;
+    languageMenu.appendChild(languageOption);
+  }
+
   var lang="en";
   try{lang=localStorage.getItem("siteLang")||"en"}catch(e){}
 
@@ -350,8 +377,45 @@ for(var translationKey in JAPANESE_TRANSLATIONS){
       }
     }
     languageSelect.value=l;
+    languageTrigger.textContent=languageSelect.options[languageSelect.selectedIndex].textContent;
+    var languageOptions=languageMenu.querySelectorAll(".language-option");
+    for(var optionIndex=0;optionIndex<languageOptions.length;optionIndex++){
+      var isSelected=languageOptions[optionIndex].getAttribute("data-value")===l;
+      languageOptions[optionIndex].classList.toggle("selected",isSelected);
+      languageOptions[optionIndex].setAttribute("aria-selected",isSelected?"true":"false");
+    }
     try{localStorage.setItem("siteLang",l)}catch(e){}
   }
+
+  function closeLanguageMenu(){
+    languageDropdown.classList.remove("open");
+    languageTrigger.setAttribute("aria-expanded","false");
+  }
+
+  languageTrigger.onclick=function(){
+    var isOpen=languageDropdown.classList.toggle("open");
+    languageTrigger.setAttribute("aria-expanded",isOpen?"true":"false");
+    if(isOpen)languageMenu.querySelector(".selected").focus();
+  };
+
+  languageMenu.onclick=function(event){
+    var option=event.target.closest(".language-option");
+    if(!option)return;
+    apply(option.getAttribute("data-value"));
+    closeLanguageMenu();
+    languageTrigger.focus();
+  };
+
+  document.addEventListener("click",function(event){
+    if(!languageDropdown.contains(event.target))closeLanguageMenu();
+  });
+
+  languageDropdown.addEventListener("keydown",function(event){
+    if(event.key==="Escape"){
+      closeLanguageMenu();
+      languageTrigger.focus();
+    }
+  });
 
   languageSelect.onchange=function(){
     apply(languageSelect.value);
