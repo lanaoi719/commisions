@@ -27,6 +27,35 @@ body {
   overflow-x: hidden;
 }
 
+.cursor-star {
+  position: fixed;
+  z-index: 1000;
+  pointer-events: none;
+  border-radius: 1px;
+  clip-path: polygon(50% 0, 61% 39%, 100% 50%, 61% 61%, 50% 100%, 39% 61%, 0 50%, 39% 39%);
+  filter: drop-shadow(0 0 0.45rem rgba(255, 255, 255, 1));
+  transform: translate(-50%, -50%) scale(0) rotate(0deg);
+  animation: cursor-star-trail 0.75s ease-out forwards;
+  will-change: transform, opacity;
+}
+
+@keyframes cursor-star-trail {
+  22% {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1) rotate(35deg);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(calc(-50% + var(--star-drift-x)), calc(-50% + var(--star-drift-y))) scale(0.15) rotate(100deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce), (hover: none), (pointer: coarse) {
+  .cursor-star {
+    display: none;
+  }
+}
+
 /* Fixed background artwork */
 body::before {
   content: '';
