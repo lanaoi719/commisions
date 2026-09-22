@@ -867,6 +867,10 @@ section {
   text-shadow: none;
 }
 
+.about-text + .about-text {
+  margin-top: 0.85rem;
+}
+
 .about-section-title {
   position: relative;
   margin-bottom: 1.5rem;
