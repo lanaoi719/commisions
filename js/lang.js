@@ -136,7 +136,8 @@ var TRANSLATIONS={
 "tos.11":{en:"Partial refunds are allowed before the completion of the model. The refund amount will depend on the stage of progress. After the refund, your commission will be discontinued.",zh:"\u6a21\u578b\u5b8c\u6210\u524d\u5141\u8bb8\u90e8\u5206\u9000\u6b3e\u3002\u9000\u6b3e\u91d1\u989d\u53d6\u51b3\u4e8e\u8fdb\u5ea6\u9636\u6bb5\u3002\u9000\u6b3e\u540e\uff0c\u60a8\u7684\u59d4\u6258\u5c06\u7ec8\u6b62\u3002"},
 "tos.12":{en:"Please credit me (Twitter@Lanaoi719) when using my work on any social media platform. You may refer to me as your Live2D mama, papa or rigger.",zh:"\u5728\u4efb\u4f55\u793e\u4ea4\u5a92\u4f53\u5e73\u53f0\u4f7f\u7528\u6211\u7684\u4f5c\u54c1\u65f6\uff0c\u8bf7\u6ce8\u660e\u6211\uff08Twitter@Lanaoi719\uff09\u3002\u60a8\u53ef\u4ee5\u79f0\u547c\u6211\u4e3a\u60a8\u7684Live2D\u5988\u5988\u3001\u7238\u7238\u6216\u5efa\u6a21\u5e08\u3002"},
 "tos.13":{en:"Your model may be used as a sample and shared on my social media in the form of screenshots, JPEG/GIF images, or showcase videos. Please inform me if you wish to keep it confidential.",zh:"\u60a8\u7684\u6a21\u578b\u53ef\u80fd\u4f1a\u4f5c\u4e3a\u6837\u54c1\u4ee5\u622a\u56fe\u3001JPEG/GIF\u56fe\u7247\u6216\u5c55\u793a\u89c6\u9891\u7684\u5f62\u5f0f\u5728\u6211\u7684\u793e\u4ea4\u5a92\u4f53\u4e0a\u5206\u4eab\u3002\u5982\u679c\u60a8\u5e0c\u671b\u4fdd\u5bc6\uff0c\u8bf7\u544a\u77e5\u6211\u3002"},
-"tos.14":{en:"If you have any further questions, please contact me at <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a> with the subject line [COMMISSION INQUIRY].",zh:"\u5982\u6709\u4efb\u4f55\u5176\u4ed6\u95ee\u9898\uff0c\u8bf7\u53d1\u9001\u90ae\u4ef6\u81f3 <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a>\uff0c\u4e3b\u9898\u4e3a [COMMISSION INQUIRY]\u3002"},
+"tos.14":{en:"All conversations and information will be kept private. However, in cases of serious breaches of the agreement, such as refusing to pay the agreed fees or making an abusive refund claim, I may disclose relevant conversation records or information as evidence.",zh:"\u6240\u6709\u5bf9\u8bdd\u548c\u4fe1\u606f\u90fd\u5c06\u4fdd\u5bc6\u3002\u4f46\u5982\u679c\u4e25\u91cd\u8fdd\u53cd\u534f\u8bae\uff0c\u4f8b\u5982\u62d2\u7edd\u652f\u4ed8\u7ea6\u5b9a\u8d39\u7528\u6216\u63d0\u51fa\u6ee5\u7528\u6027\u9000\u6b3e\u7533\u8bf7\uff0c\u6211\u53ef\u80fd\u4f1a\u516c\u5f00\u76f8\u5173\u5bf9\u8bdd\u8bb0\u5f55\u6216\u4fe1\u606f\u4f5c\u4e3a\u8bc1\u636e\u3002"},
+"tos.15":{en:"If you have any further questions, please contact me at <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a> with the subject line [COMMISSION INQUIRY].",zh:"\u5982\u6709\u4efb\u4f55\u5176\u4ed6\u95ee\u9898\uff0c\u8bf7\u53d1\u9001\u90ae\u4ef6\u81f3 <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a>\uff0c\u4e3b\u9898\u4e3a [COMMISSION INQUIRY]\u3002"},
 "footer":{en:"\u00a9 2026 Lanaoi. All rights reserved.",zh:"\u00a9 2026 Lanaoi. \u4fdd\u7559\u6240\u6709\u6743\u5229\u3002"}
 };
 
@@ -278,7 +279,8 @@ var TRADITIONAL_CHINESE_TRANSLATIONS={
 "tos.11":"模型完成前允許部分退款。退款金額取決於進度階段。退款後，您的委託將終止。",
 "tos.12":"在任何社群媒體平台使用我的作品時，請註明我（Twitter@Lanaoi719）。您可以稱呼我為您的Live2D媽媽、爸爸或建模師。",
 "tos.13":"您的模型可能會作為樣品以截圖、JPEG/GIF圖片或展示影片的形式在我的社群媒體上分享。如果您希望保密，請告知我。",
-"tos.14":"如有任何其他問題，請傳送電子郵件至 <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a>，主題為 [COMMISSION INQUIRY]。",
+"tos.14":"所有對話和資訊都將保密。但如果嚴重違反協議，例如拒絕支付約定費用或提出濫用性退款申請，我可能會公開相關對話記錄或資訊作為證據。",
+"tos.15":"如有任何其他問題，請傳送電子郵件至 <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a>，主題為 [COMMISSION INQUIRY]。",
 "footer":"© 2026 Lanaoi. 保留所有權利。"
 };
 
@@ -424,7 +426,8 @@ var JAPANESE_TRANSLATIONS={
 "tos.11":"モデル完成前であれば、一部返金が可能です。返金額は制作の進行状況によって異なり、返金後は制作を終了します。",
 "tos.12":"作品をSNSで使用する際は、私（Twitter @Lanaoi719）のクレジットを表記してください。Live2D mama、papa、またはriggerとしてご紹介いただけます。",
 "tos.13":"モデルは実績サンプルとして、スクリーンショット、JPEG/GIF画像、紹介動画などの形で私のSNSに掲載する場合があります。非公開をご希望の場合はお知らせください。",
-"tos.14":"ご不明な点がございましたら、件名を[COMMISSION INQUIRY]として <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a> までご連絡ください。",
+"tos.14":"すべての会話および情報は非公開として取り扱います。ただし、合意した料金の支払い拒否や不当な返金請求など、規約への重大な違反があった場合、証拠として関連する会話記録または情報を公開することがあります。",
+"tos.15":"ご不明な点がございましたら、件名を[COMMISSION INQUIRY]として <a href='mailto:Lanaoicomms@gmail.com'>Lanaoicomms@gmail.com</a> までご連絡ください。",
 "footer":"© 2026 Lanaoi. All rights reserved."
 };
 
