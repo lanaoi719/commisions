@@ -2011,6 +2011,14 @@ section {
   margin-bottom: 0;
 }
 
+.tos-updated {
+  margin-top: 0.75rem;
+  color: rgba(0, 0, 0, 0.52);
+  font-size: 0.82em;
+  line-height: 1.4;
+  text-align: center;
+}
+
 .tos-panel {
   padding: 0.75rem 2.5rem;
   border: 1px solid rgba(0, 0, 0, 0.11);
